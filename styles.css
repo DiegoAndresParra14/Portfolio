@@ -1,0 +1,59 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #050505;
+    color: #e2e1eb;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+}
+
+.tonal-card {
+    background-color: #121212;
+    border: 1px solid #222222;
+    transition: border-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+.tonal-card:hover {
+    border-color: #333333;
+}
+
+[data-reveal] {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.is-revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+[data-form-message].is-visible {
+    display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .tonal-card,
+    [data-reveal] {
+        transition: none;
+    }
+
+    [data-reveal] {
+        opacity: 1;
+        transform: none;
+    }
+}

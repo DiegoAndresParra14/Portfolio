@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ARCHITECT.LOG | Diego Andres Parra</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="./styles.css" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-container": "#e9e6e6",
+                      "surface-variant": "#33343c",
+                      "surface-dim": "#12131a",
+                      "surface-container-highest": "#33343c",
+                      "secondary-container": "#4a4949",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "tertiary-fixed-dim": "#c8c6c5",
+                      "primary": "#b6c4ff",
+                      "error-container": "#93000a",
+                      "surface-container-high": "#282a31",
+                      "outline-variant": "#434656",
+                      "on-tertiary-fixed-variant": "#474746",
+                      "on-primary-fixed-variant": "#0039b3",
+                      "on-surface": "#e2e1eb",
+                      "surface-container-lowest": "#0c0e14",
+                      "on-surface-variant": "#c3c5d9",
+                      "on-primary-fixed": "#001551",
+                      "surface-bright": "#383940",
+                      "error": "#ffb4ab",
+                      "primary-fixed-dim": "#b6c4ff",
+                      "primary-fixed": "#dce1ff",
+                      "tertiary-fixed": "#e5e2e1",
+                      "tertiary-container": "#686767",
+                      "on-primary": "#002780",
+                      "outline": "#8d90a2",
+                      "on-tertiary-fixed": "#1b1b1c",
+                      "background": "#12131a",
+                      "on-secondary": "#313030",
+                      "secondary-fixed": "#e5e2e1",
+                      "surface-tint": "#b6c4ff",
+                      "on-error": "#690005",
+                      "tertiary": "#c8c6c5",
+                      "on-background": "#e2e1eb",
+                      "on-error-container": "#ffdad6",
+                      "surface": "#12131a",
+                      "primary-container": "#0055ff",
+                      "on-secondary-fixed-variant": "#474646",
+                      "inverse-on-surface": "#2f3037",
+                      "secondary-fixed-dim": "#c8c6c5",
+                      "inverse-primary": "#004dea",
+                      "on-tertiary": "#303030",
+                      "on-primary-container": "#e3e6ff",
+                      "surface-container-low": "#1a1b22",
+                      "surface-container": "#1e1f26",
+                      "on-secondary-container": "#bab8b7",
+                      "secondary": "#c8c6c5",
+                      "inverse-surface": "#e2e1eb"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "md": "16px",
+                      "gutter": "24px",
+                      "xl": "40px",
+                      "sm": "8px",
+                      "lg": "24px",
+                      "xs": "4px",
+                      "unit": "4px",
+                      "container-max": "1200px",
+                      "xxl": "80px"
+              },
+              "fontFamily": {
+                      "body-md": ["Inter"],
+                      "code": ["monospace"],
+                      "label-caps": ["Inter"],
+                      "h3": ["Inter"],
+                      "h2": ["Inter"],
+                      "h1": ["Inter"],
+                      "body-lg": ["Inter"]
+              },
+              "fontSize": {
+                      "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                      "code": ["14px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}],
+                      "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                      "h3": ["24px", {"lineHeight": "1.3", "letterSpacing": "0", "fontWeight": "600"}],
+                      "h2": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "h1": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="font-body-md">
+<!-- TopNavBar -->
+<header class="sticky top-0 w-full z-50 bg-[#050505] border-b border-[#222222]">
+<nav class="flex items-center justify-between h-16 max-w-[1200px] mx-auto px-6">
+<div class="text-xl font-bold tracking-tighter text-white font-h3 uppercase">ARCHITECT.LOG</div>
+<div class="hidden md:flex items-center gap-8 font-['Inter'] text-sm tracking-tight" data-nav-links>
+<a class="text-[#0055FF] border-b-2 border-[#0055FF] pb-1 transition-colors duration-200" href="#home">Home</a>
+<a class="text-[#A1A1AA] hover:text-white transition-colors duration-200" href="#about">About</a>
+<a class="text-[#A1A1AA] hover:text-white transition-colors duration-200" href="#tech">Tech Stack</a>
+<a class="text-[#A1A1AA] hover:text-white transition-colors duration-200" href="#projects">Projects</a>
+<a class="text-[#A1A1AA] hover:text-white transition-colors duration-200" href="#journey">Journey</a>
+<a class="text-[#A1A1AA] hover:text-white transition-colors duration-200" href="#contact">Contact</a>
+</div>
+<button class="bg-[#0055FF] text-white px-5 py-2 text-sm font-semibold hover:opacity-90 active:scale-95 transition-all" data-scroll-target="#contact" type="button">Resume</button>
+</nav>
+</header>
+<main class="max-w-[1200px] mx-auto px-6">
+<!-- Hero Section -->
+<section class="py-20 md:py-32 flex flex-col md:flex-row items-center gap-12" id="home">
+<div class="flex-1 space-y-6">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-[#A1A1AA]">FORMÁNDOME PARA NUEVAS OPORTUNIDADES</span>
+</div>
+<h1 class="font-h1 text-h1 leading-none">Diego Andres Parra | <span class="text-primary-container">Estudiante de Desarrollo Full Stack</span></h1>
+<p class="font-body-lg text-body-lg text-[#A1A1AA] max-w-xl">Enfocado en el desarrollo de aplicaciones web con especial interés en la lógica de backend. Construyendo bases sólidas con Java, Node.js y Python.</p>
+<div class="flex gap-4 pt-4">
+<button class="bg-primary-container text-white px-8 py-4 font-semibold hover:brightness-110 transition-all" data-scroll-target="#projects" type="button">Ver Proyectos</button>
+<button class="border border-[#222222] bg-transparent text-white px-8 py-4 font-semibold hover:bg-[#121212] transition-all" data-scroll-target="#contact" type="button">Contactar</button>
+</div>
+</div>
+<div class="w-full md:w-[400px] aspect-square tonal-card p-4 relative overflow-hidden group">
+<img alt="Diego Andres Parra" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Close-up portrait of a young professional man with a confident expression in a tech office environment with blue ambient lighting" src="./WhatsApp%20Image%202026-04-23%20at%2011.07.42%20PM.jpeg"/>
+<div class="absolute inset-0 bg-primary-container/10 pointer-events-none"></div>
+</div>
+</section>
+<!-- About & Tech Stack Bento -->
+<section class="py-20" id="about">
+<div class="bento-grid">
+<!-- About Me -->
+<div class="col-span-12 md:col-span-8 tonal-card p-8 flex flex-col justify-between">
+<div>
+<h3 class="font-h3 text-h3 mb-6 text-white">About Me</h3>
+<p class="font-body-md text-body-md text-[#A1A1AA] mb-4">
+                            Soy un estudiante apasionado por el desarrollo de software, centrado actualmente en el **Backend**. Mi objetivo es aprender a construir la arquitectura que permite que las aplicaciones funcionen de manera fluida y eficiente.
+                        </p>
+<p class="font-body-md text-body-md text-[#A1A1AA]">
+                            Estoy comprometido con aprender los fundamentos del desarrollo, desde la lógica de programación hasta el diseño de **APIs** y la gestión de bases de datos. Busco constantemente aplicar buenas prácticas y resolver retos técnicos de forma estructurada.
+                        </p>
+</div>
+<div class="mt-8 flex gap-4 text-primary-container">
+<span class="material-symbols-outlined" data-icon="terminal">terminal</span>
+<span class="material-symbols-outlined" data-icon="database">database</span>
+<span class="material-symbols-outlined" data-icon="code">code</span>
+</div>
+</div>
+<!-- Status / Quick Info -->
+<div class="col-span-12 md:col-span-4 tonal-card p-8 border-primary-container/30" id="tech">
+<h3 class="font-h3 text-h3 mb-6 text-white">Tech Stack</h3>
+<div class="flex flex-wrap gap-2">
+<span class="bg-[#1E1E1E] text-[#A1A1AA] px-3 py-1 font-label-caps text-[10px] tracking-widest">JAVA</span>
+<span class="bg-[#1E1E1E] text-[#A1A1AA] px-3 py-1 font-label-caps text-[10px] tracking-widest">NODE.JS</span>
+<span class="bg-[#1E1E1E] text-[#A1A1AA] px-3 py-1 font-label-caps text-[10px] tracking-widest">PYTHON</span>
+<span class="bg-[#1E1E1E] text-[#A1A1AA] px-3 py-1 font-label-caps text-[10px] tracking-widest">JAVASCRIPT</span>
+<span class="bg-[#1E1E1E] text-[#A1A1AA] px-3 py-1 font-label-caps text-[10px] tracking-widest">HTML</span>
+<span class="bg-[#1E1E1E] text-[#A1A1AA] px-3 py-1 font-label-caps text-[10px] tracking-widest">CSS</span>
+<span class="bg-[#1E1E1E] text-[#A1A1AA] px-3 py-1 font-label-caps text-[10px] tracking-widest">SQL</span>
+<span class="bg-[#1E1E1E] text-[#A1A1AA] px-3 py-1 font-label-caps text-[10px] tracking-widest">GIT</span>
+<span class="bg-[#1E1E1E] text-[#A1A1AA] px-3 py-1 font-label-caps text-[10px] tracking-widest">SCRUM</span>
+</div>
+<div class="mt-8 space-y-4">
+<div class="space-y-1">
+<div class="flex justify-between font-label-caps text-[10px]">
+<span>LOGIC &amp; PROGRAMMING</span>
+<span>75%</span>
+</div>
+<div class="w-full h-1 bg-[#222222]">
+<div class="h-full bg-primary-container w-[75%]"></div>
+</div>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between font-label-caps text-[10px]">
+<span>WEB FUNDAMENTALS</span>
+<span>70%</span>
+</div>
+<div class="w-full h-1 bg-[#222222]">
+<div class="h-full bg-primary-container w-[70%]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="py-20" id="projects">
+<h2 class="font-h2 text-h2 mb-12 border-l-4 border-primary-container pl-6 uppercase tracking-tighter">Academic Projects</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Project 1 -->
+<div class="tonal-card flex flex-col group">
+<div class="h-48 overflow-hidden bg-[#1a1b22]">
+<img alt="Weather API Dashboard" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" data-alt="Screen showing weather icons and charts on a dark interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQvU1tL1b7ISpyAuzQcT7P_yYt8g1vGLVtLWygwqWeovQ4-xlzTK4zMvV6oFBcIKWDl36EZHC6rdUU3nl7R53CH0Mj9DPtxFJUa-niCU5BL9utp6M7N1vORqoIiLR-6bS5oKc8SdeatSluB3cg5vp2J5ORcQrinGVvdCqei94O8QtBgKPCCTgMevYicND3dMcW_ai7rO__zwpNajJjl1NVEtzB8b_9HAs3G3VS2B8iZ0-LvYHvL_snu1FQDA-7L-XObQntpofQj_U"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-h3 text-h3 text-white">Weather API Dashboard</h4>
+<span class="material-symbols-outlined text-primary-container" data-icon="link">link</span>
+</div>
+<p class="text-[#A1A1AA] mb-6">Una aplicación que consume una API pública para mostrar datos meteorológicos en tiempo real utilizando JavaScript.</p>
+<div class="flex gap-4">
+<span class="text-xs font-bold text-primary-container">JAVASCRIPT</span>
+<span class="text-xs font-bold text-primary-container">API FETCH</span>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="tonal-card flex flex-col group">
+<div class="h-48 overflow-hidden bg-[#1a1b22]">
+<img alt="Local Inventory CRUD" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" data-alt="Clean table interface with add and delete buttons" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBp_UFkHRr_gjjLRrOo1HC16sJHu8wdtkhMcIvnhqIw69v_wCxuPp-AbeOtYSuR3XWkVGhAUVKx8KAyYlINnTBHPTCqXrUB3mZ9CIzBjAIK8cgGC9MxCfnmqc3Sz_jWMvtK8JH1-dOM7qkSCkffs5-YKyFRc8Miu5ReRzwuAKr7krZ_B8Cjrt70NGsCxrzI0dDk6dOTgA82x3PvA7eF-AhKl_p92tSqu-MwvRbgl0myTVYOfWxYbCOa8PArgVcnA5hd0D6RZPSKn8"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-h3 text-h3 text-white">Local Inventory CRUD</h4>
+<span class="material-symbols-outlined text-primary-container" data-icon="link">link</span>
+</div>
+<p class="text-[#A1A1AA] mb-6">Un sistema sencillo de gestión de inventario que utiliza HTML, CSS y JavaScript con LocalStorage para la persistencia de datos.</p>
+<div class="flex gap-4">
+<span class="text-xs font-bold text-primary-container">HTML</span>
+<span class="text-xs font-bold text-primary-container">CSS</span>
+<span class="text-xs font-bold text-primary-container">JS</span>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="tonal-card flex flex-col group">
+<div class="h-48 overflow-hidden bg-[#1a1b22]">
+<img alt="Python Data Processor" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" data-alt="Terminal window showing text processing output" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQFXzHSug9ewbchzynLo_Lz86HeXPoy96CIYCTporFTXwr-04ApraQdmAQM7J-RFmj2wbSW66QlTIyL5bv0pWmoSP7SL2wAqMg5vvx5BSeTrAOhfKoBOfFqlS-zSMtjkYrKmGKnZFD9AsyhgMyc9lpwdHNsI5yOmu_Zl4Y-gwMmu_qL6l35gNhPDXW62lH_yQ2jnSR6lfNDpLSypA27cWpU9i-hNfZnEpeqvd3FSxTsYdKEDIFF_IDFXlLvT3u0sxQyhTCDDJGnTU"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-h3 text-h3 text-white">Python Data Processor</h4>
+<span class="material-symbols-outlined text-primary-container" data-icon="link">link</span>
+</div>
+<p class="text-[#A1A1AA] mb-6">Script de Python para procesar archivos JSON y generar reportes básicos con formato.</p>
+<div class="flex gap-4">
+<span class="text-xs font-bold text-primary-container">PYTHON</span>
+<span class="text-xs font-bold text-primary-container">JSON</span>
+</div>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="tonal-card flex flex-col group">
+<div class="h-48 overflow-hidden bg-[#1a1b22]">
+<img alt="Interactive Landing Page" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist website design displayed on a laptop screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGrjtTyLr0bsbSnfdJZlWiv166a7t90j7Be_Amqt4jgDHwEVeCfR14V3_2gIeu3aMEsbZzPJK7gGfGc5m70IotepemIZMBfDhxEbfTn41fZ6Wdq18GMt0qxHJhueq0SaNWFJJ4wv1QKa9DxKbEIboWXMjzqMO_YEfSHjPhMNbLvQL0qB8xWbxTwsCyEq4agsBgmEUSGrIgcGL4wIDh8gq0f2Hsepeu7wfvFdQzSud-ptw5tBe_yY_eGQbztYkI8mm-cevGF2yu770"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-h3 text-h3 text-white">Interactive Landing Page</h4>
+<span class="material-symbols-outlined text-primary-container" data-icon="link">link</span>
+</div>
+<p class="text-[#A1A1AA] mb-6">Una landing page responsiva construida con HTML y CSS limpios, aplicando principios básicos de diseño.</p>
+<div class="flex gap-4">
+<span class="text-xs font-bold text-primary-container">HTML5</span>
+<span class="text-xs font-bold text-primary-container">CSS3</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Journey Section -->
+<section class="py-20" id="journey">
+<h2 class="font-h2 text-h2 mb-12 text-center uppercase tracking-tighter">Growth Journey</h2>
+<div class="relative border-l border-[#222222] ml-4 md:ml-0 md:left-1/2">
+<!-- 2024 -->
+<div class="mb-12 relative pl-10 md:pl-0">
+<div class="absolute -left-1.5 top-0 w-3 h-3 rounded-full bg-primary-container"></div>
+<div class="md:w-1/2 md:pr-12 md:text-right">
+<span class="font-label-caps text-primary-container">CURRENT</span>
+<h4 class="font-h3 text-h3 text-white mt-2">Full Stack Training</h4>
+<p class="text-[#A1A1AA] mt-2">Aprendiendo activamente a integrar el frontend con el backend mediante proyectos prácticos.</p>
+</div>
+</div>
+<!-- 2023 -->
+<div class="mb-12 relative pl-10 md:pl-0">
+<div class="absolute -left-1.5 top-0 w-3 h-3 rounded-full bg-[#333333]"></div>
+<div class="md:w-1/2 md:ml-[50%] md:pl-12">
+<span class="font-label-caps text-[#A1A1AA]">2025</span>
+<h4 class="font-h3 text-h3 text-white mt-2">Programming Basics</h4>
+<p class="text-[#A1A1AA] mt-2">Inicio en la lógica de programación y manejo de lenguajes como JavaScript y Java.</p>
+</div>
+</div>
+<!-- 2022 -->
+<div class="relative pl-10 md:pl-0">
+<div class="absolute -left-1.5 top-0 w-3 h-3 rounded-full bg-[#333333]"></div>
+<div class="md:w-1/2 md:pr-12 md:text-right">
+<span class="font-label-caps text-[#A1A1AA]">2024</span>
+<h4 class="font-h3 text-h3 text-white mt-2">Early Interest in Tech</h4>
+<p class="text-[#A1A1AA] mt-2">Exploración de fundamentos de computación y conceptos básicos de la web.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-20" id="contact">
+<div class="tonal-card p-12 max-w-4xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div>
+<h2 class="font-h2 text-h2 mb-6 uppercase text-white">Let's Connect</h2>
+<p class="text-[#A1A1AA] mb-8">¿Buscas un estudiante motivado para un proyecto o pasantía? Estaré encantado de conversar sobre cómo puedo aportar y seguir aprendiendo.</p>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary-container" data-icon="mail">mail</span>
+<span class="text-white">dieguitop678@gmail.com</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary-container" data-icon="location_on">location_on</span>
+<span class="text-white">Floridablanca, Santander, CO</span>
+</div>
+</div>
+</div>
+<form class="space-y-6" data-contact-form>
+<div>
+<label class="font-label-caps text-[10px] text-[#A1A1AA] mb-2 block">NOMBRE COMPLETO</label>
+<input class="w-full bg-transparent border-b border-[#222222] focus:border-primary-container focus:ring-0 transition-colors py-2 text-white" name="name" type="text"/>
+</div>
+<div>
+<label class="font-label-caps text-[10px] text-[#A1A1AA] mb-2 block">EMAIL</label>
+<input class="w-full bg-transparent border-b border-[#222222] focus:border-primary-container focus:ring-0 transition-colors py-2 text-white" name="email" type="email"/>
+</div>
+<div>
+<label class="font-label-caps text-[10px] text-[#A1A1AA] mb-2 block">MENSAJE</label>
+<textarea class="w-full bg-transparent border-b border-[#222222] focus:border-primary-container focus:ring-0 transition-colors py-2 text-white resize-none" name="message" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary-container text-white py-4 font-bold uppercase tracking-widest hover:brightness-110 transition-all" type="submit">Enviar Mensaje</button>
+<p aria-live="polite" class="hidden text-sm text-primary-container" data-form-message></p>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 mt-20 border-t border-[#222222] bg-[#050505]">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-[1200px] mx-auto px-6 gap-4 font-['Inter'] text-xs uppercase tracking-widest text-[#A1A1AA]">
+<div>© 2026 Built with Code &amp; Learning</div>
+<div class="flex gap-8">
+<a class="hover:text-[#0055FF] transition-colors duration-300" href="#">GitHub</a>
+<a class="hover:text-[#0055FF] transition-colors duration-300" href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+<script src="./script.js"></script>
+</body></html>
