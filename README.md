@@ -1,123 +1,95 @@
-# Portfolio Personal — Diego Andres Parra
+# Portafolio Profesional de Alto Impacto — Diego Andrés Parra
 
-Sitio web personal estático tipo portafolio, construido con **HTML5**, **CSS3**, **JavaScript** y **Tailwind CSS**. Diseñado como vitrina de proyectos académicos, tecnologías y trayectoria de aprendizaje como desarrollador Full Stack.
+Sitio web personal y portafolio de servicios de alto impacto para **Diego Andrés Parra**, **Desarrollador Full Stack & Especialista en Automatizaciones y Backend**. Rediseñado bajo una rigurosa rúbrica de evaluación profesional de 3 capas para transformar un currículum técnico convencional en una vitrina comercial y de ingeniería de software moderna y atractiva.
 
-## 📋 Índice
+---
 
-- [Descripción General](#descripción-general)
-- [Tecnologías Utilizadas](#tecnologías-utilizadas)
-- [Estructura del Proyecto](#estructura-del-proyecto)
-- [Funcionalidades](#funcionalidades)
-- [Instalación y Uso Local](#instalación-y-uso-local)
-- [Despliegue](#despliegue)
-- [Personalización](#personalización)
-- [Contacto](#contacto)
+## 💎 Sistema de Diseño Visual (Look & Feel Moderno y Premium)
 
-## 📖 Descripción General
+- **Tema Dark Mode en Capas**:
+  - Fondo Base: `#090D16` con resplandor ambiental (*ambient glow*).
+  - Superficies y Bento Cards (Nivel 1): `#0F172A` con `backdrop-blur` y bordes sutiles semi-translúcidos (`border-slate-800/60`).
+  - Tarjetas y Contenedores Elevados (Nivel 2): `#1E293B` con efectos de elevación al hover y micro-interacciones.
+- **Acentos Cromáticos**:
+  - Azul Cian Moderno (`#38BDF8`) y Violeta Técnico (`#818CF8`) con gradientes suaves y sombras luminiscentes (*glow effect*).
+- **Tipografía**:
+  - Fuentes sans-serif limpias: **Plus Jakarta Sans** e **Inter** para titulares y cuerpos de texto con alto contraste y ritmo visual, complementadas con **JetBrains Mono** para etiquetas técnicas y fragmentos de código.
+- **Componentes**:
+  - Bento Grid interactivo con esquinas redondeadas (`rounded-2xl`), transiciones fluidas de elevación (`hover:-translate-y-1.5`), y soporte total para accesibilidad y `prefers-reduced-motion`.
 
-**ARCHITECT.LOG** es un portafolio web oscuro y moderno, diseñado para presentar:
+---
 
-- **Perfil profesional**: presentación personal con foto e información de contacto.
-- **Tech Stack**: lista de tecnologías que domina el desarrollador, con barras de progreso visuales.
-- **Proyectos académicos**: tarjetas interactivas con imágenes y descripciones de proyectos realizados.
-- **Trayectoria de aprendizaje (Journey)**: línea de tiempo que muestra el crecimiento en tecnología.
-- **Formulario de contacto**: permite a los visitantes enviar mensajes (actualmente simulado en frontend).
+## 📐 Arquitectura del Portafolio (Rúbrica de 3 Capas)
 
-## 🛠️ Tecnologías Utilizadas
+### 1. Hero & Capa 1: Identidad Profesional
+- **Titular de Impacto**:
+  - *"Diego Andrés Parra"*
+  - *"Construyo sistemas backend resilientes y automatizaciones que eliminan la ineficiencia operativa."*
+- **Badges de Especialidad**: `Desarrollador Full Stack` | `Cloud & Backend Architecture` | `AI & Automation`.
+- **Llamados a la Acción (CTAs)**:
+  - *"Explorar Proyectos"* (desplazamiento suave directo al grid de proyectos).
+  - *"Contáctame"* (acceso directo a formulario y canales comerciales).
+  - *"Descargar CV (PDF)"* (modal interactivo ejecutivo con vista previa lista para imprimir o guardar como PDF en 1 clic).
+- **Filosofía y Misión (3 Pilares Sutiles)**:
+  - **Misión**: Diseñar soluciones de software escalables y arquitecturas backend limpias que reduzcan tiempos operativos manuales.
+  - **Visión**: Liderar la transformación de flujos operativos complejos hacia infraestructuras modernas y automatizadas.
+  - **Valores**: Código limpio (Clean Architecture), rigor en el versionamiento (Git Flow estricto con commits semánticos) y enfoque pragmático en el retorno de inversión técnica.
 
-| Tecnología | Propósito |
-|---|---|
-| **HTML5** | Estructura semántica de la página |
-| **CSS3** | Estilos personalizados y animaciones |
-| **Tailwind CSS** | Framework de utilidades para diseño rápido (vía CDN) |
-| **JavaScript (Vanilla)** | Navegación, animaciones, formulario |
-| **Google Fonts (Inter)** | Tipografía principal |
-| **Material Symbols** | Iconografía moderna |
+### 2. Capa 2: Servicios Estrella & Soluciones
+Presentación de 3 tarjetas de servicio orientadas a los problemas reales de negocio que resuelven:
+1. **Desarrollo Backend & Arquitectura de Datos**: Diseño de bases de datos relacionales en la nube, APIs y sistemas de gestión empresarial bajo patrón MVC.
+2. **Automatización de Procesos Operativos**: Integración de flujos de trabajo inteligentes con n8n, Python y modelos de IA para eliminar tareas manuales.
+3. **Desarrollo Full Stack & Paneles de Control**: Creación de dashboards y plataformas interactivas para el monitoreo de datos y operaciones en tiempo real.
 
-## 🗂️ Estructura del Proyecto
+- **Sub-barra de Certificaciones & Stack Técnico Categorizado**:
+  - **Lenguajes Core**: Java (SE/MVC), Python 3, JavaScript (ES6+), SQL (DDL/DML), HTML5/CSS3.
+  - **Bases de Datos & Cloud**: MySQL Cloud, PostgreSQL, Modelado ERD, Restricciones FK, Transacciones ACID.
+  - **Automatización & IA**: n8n Workflows, OpenAI/LLMs, Webhooks asíncronos, Telegram/Email APIs.
+  - **Herramientas & Rigor**: Git Flow Riguroso (`develop`, `feature/*`), Conventional Commits en inglés, Linux CLI, Auditoría en archivos planos.
 
-```
-Portfolio/
-├── index.html                      # Página principal del portafolio
-├── styles.css                      # Estilos personalizados
-├── script.js                       # Lógica del frontend
-├── README.md                       # Documentación del proyecto
-└── WhatsApp Image 2026-04-23 at 11.07.42 PM.jpeg  # Foto de perfil
-```
+### 3. Capa 3: Evidencia y Proyectos (Formato Contexto - Rol - Resultados)
+Eliminación de descripciones genéricas para presentar proyectos con imágenes temáticas profesionales, tags de tecnologías, enlaces a repositorios y análisis estructurado:
 
-### Descripción de Archivos
+- **RapidExpress – Sistema de Gestión Logística, Flotas y Rutas (Proyecto Java Backend)**:
+  - *Contexto*: Plataforma backend para compañía de mensajería con pérdidas por seguimiento manual y falta de validación de capacidades vehiculares.
+  - *Rol & Implementación*: Diseño de modelo relacional ERD persistido en MySQL Cloud, arquitectura MVC en Java con control de concurrencia, módulo de auditoría plana y Git Flow riguroso con más de 10 commits semánticos.
+  - *Resultados*: Centralización del 100% de la operativa logística con consistencia absoluta de estados y reportes instantáneos.
+- **AI Automation Hub – Dashboard de Telemetría y Flujos de IA**:
+  - *Contexto*: Falta de visibilidad en tiempo real sobre la ejecución de pipelines de automatización y alertas preventivas.
+  - *Rol & Implementación*: Backend analítico en Python, modelos IA para detección predictiva de fallos y dashboard reactivo.
+  - *Resultados*: Reducción del 70% en el tiempo medio de diagnóstico de fallos operacionales.
+- **Enterprise Core – Plataforma Modular con Git Flow Riguroso**:
+  - *Contexto*: Necesidad de un sistema full stack colaborativo sin divergencias entre entornos y código desacoplado.
+  - *Rol & Implementación*: Arquitectura desacoplada, pipeline de ramas protegidas con Git Flow y microcomponentes con Tailwind.
+  - *Resultados*: 0 regresiones en producción y trazabilidad del 100% de cambios en el ciclo de entrega.
+- **CitizenVoice – Automatización n8n & Clasificación Inteligente**:
+  - *Contexto*: Colapso administrativo por recepción manual no estructurada de reportes ciudadanos con demoras de hasta 5 días.
+  - *Rol & Implementación*: Flujos n8n multicanal, clasificación automática con IA y despacho automático a bases de datos y mensajería.
+  - *Resultados*: Automatización del 90% del triaje y reducción del tiempo de respuesta a 30 segundos.
 
-- **`index.html`**: Contiene toda la estructura del sitio, incluyendo la barra de navegación, secciones (home, about, tech stack, projects, journey, contact) y el footer. Usa Tailwind CSS vía CDN para el diseño responsivo.
-- **`styles.css`**: Estilos complementarios que no cubre Tailwind, como animaciones de revelado al scroll, transiciones de tarjetas y soporte para `prefers-reduced-motion`.
-- **`script.js`**: Funcionalidades principales:
-  - Navegación suave con `scrollIntoView`.
-  - Observador de secciones para resaltar el enlace activo.
-  - Animación de revelado al hacer scroll (intersection observer).
-  - Validación básica del formulario de contacto.
-- **`README.md`**: Este archivo de documentación.
+---
 
-## ✨ Funcionalidades
+## 📬 Contacto y Canales Directos
 
-- ✅ **Navegación suave**: los enlaces del menú desplazan la página suavemente a cada sección.
-- ✅ **Resaltado de sección activa**: el enlace de navegación correspondiente se ilumina según la sección visible.
-- ✅ **Revelado progresivo**: las tarjetas aparecen con una animación suave al hacer scroll.
-- ✅ **Formulario con validación**: verifica que todos los campos estén completos antes de mostrar un mensaje de confirmación.
-- ✅ **Diseño responsivo**: se adapta a dispositivos móviles, tablets y escritorio.
-- ✅ **Modo oscuro**: tema oscuro consistente con colores de la paleta Material You.
-- ✅ **Soporte de accesibilidad**: respeta `prefers-reduced-motion` para personas con sensibilidad a movimientos.
+- **Email Profesional**: [dieguitop678@gmail.com](mailto:dieguitop678@gmail.com)
+- **WhatsApp Comercial**: [(+57) 313 429 8253](https://wa.me/573134298253)
+- **GitHub**: [DiegoAndresParra14](https://github.com/DiegoAndresParra14)
+- **LinkedIn**: [diego-parra-6761a43a1](https://www.linkedin.com/in/diego-parra-6761a43a1/)
+- **Ubicación**: Floridablanca / Bucaramanga, Santander, Colombia (Disponible para trabajo remoto / híbrido)
 
-## 🚀 Instalación y Uso Local
+---
 
-Como el proyecto es completamente estático (sin backend ni bundler), puedes ejecutarlo de las siguientes maneras:
+## 💻 Ejecución Local
 
-### Opción 1: Abrir directamente en el navegador
+Dado que es una plataforma web estática moderna basada en Tailwind CSS y JavaScript vanilla optimizado, puede ejecutarse inmediatamente:
 
 ```bash
-# Abre el archivo index.html directamente
-xdg-open Portfolio/index.html   # Linux
-open Portfolio/index.html       # macOS
-# O haz doble clic en el archivo desde el explorador de archivos
-```
-
-### Opción 2: Servidor local con Python
-
-```bash
-# Desde la raíz del proyecto
+# Con servidor Python 3
 cd Portfolio
 python3 -m http.server 8000
+
+# O utilizando Node.js / npx
+npx serve .
 ```
 
-Luego abre en tu navegador:
-```
-http://localhost:8000
-```
-
-### Opción 3: Servidor local con Node.js
-
-```bash
-# Si tienes Node.js instalado
-npx serve Portfolio/
-```
-
-## 🌐 Despliegue
-
-Este sitio puede ser desplegado fácilmente en plataformas de hosting estático:
-
-| Plataforma | Instrucciones |
-|---|---|
-| **GitHub Pages** | Sube el contenido de `Portfolio/` a la rama `gh-pages` o configura Pages desde `main` apuntando a la carpeta `/Portfolio`. |
-| **Netlify** | Arrastra la carpeta `Portfolio/` a Netlify Drop o conecta el repositorio con build command vacío y publish directory como `Portfolio`. |
-| **Vercel** | Conecta el repositorio, con Framework Preset "Other" y output directory como `Portfolio`. |
-
-## 🎨 Personalización
-
-- **Imagen de perfil**: reemplaza el archivo `WhatsApp Image 2026-04-23 at 11.07.42 PM.jpeg` por tu propia foto y actualiza la ruta en `index.html`.
-- **Colores**: modifica la configuración de Tailwind dentro de la etiqueta `<script id="tailwind-config">` en `index.html`.
-- **Proyectos**: edita las tarjetas de proyectos en la sección `#projects` de `index.html`.
-- **Redes sociales**: actualiza los enlaces de GitHub y LinkedIn en el footer.
-
-## 📄 Contacto
-
-- **Email**: dieguitop678@gmail.com
-- **Ubicación**: Floridablanca, Santander, Colombia
-- **GitHub**: [DiegoAndresParra14](https://github.com/DiegoAndresParra14)
+Abre en tu navegador `http://localhost:8000` para explorar la experiencia completa.

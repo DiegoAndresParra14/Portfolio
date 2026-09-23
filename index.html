@@ -1,347 +1,1483 @@
 <!DOCTYPE html>
+<html class="dark scroll-smooth" lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Diego Andrés Parra | Desarrollador Full Stack & Backend Specialist</title>
+  <meta name="description" content="Portafolio profesional de Diego Andrés Parra. Construyo sistemas backend resilientes, arquitecturas de datos en la nube y automatizaciones con IA que eliminan la ineficiencia operativa." />
+  
+  <!-- Favicon / SVG Icon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230F172A'/><text x='50%' y='65%' font-size='50' font-family='sans-serif' font-weight='800' fill='%2338BDF8' text-anchor='middle'>DP</text></svg>" />
 
-<html class="dark" lang="es"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>ARCHITECT.LOG | Diego Andres Parra</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="./styles.css" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "on-tertiary-container": "#e9e6e6",
-                      "surface-variant": "#33343c",
-                      "surface-dim": "#12131a",
-                      "surface-container-highest": "#33343c",
-                      "secondary-container": "#4a4949",
-                      "on-secondary-fixed": "#1c1b1b",
-                      "tertiary-fixed-dim": "#c8c6c5",
-                      "primary": "#b6c4ff",
-                      "error-container": "#93000a",
-                      "surface-container-high": "#282a31",
-                      "outline-variant": "#434656",
-                      "on-tertiary-fixed-variant": "#474746",
-                      "on-primary-fixed-variant": "#0039b3",
-                      "on-surface": "#e2e1eb",
-                      "surface-container-lowest": "#0c0e14",
-                      "on-surface-variant": "#c3c5d9",
-                      "on-primary-fixed": "#001551",
-                      "surface-bright": "#383940",
-                      "error": "#ffb4ab",
-                      "primary-fixed-dim": "#b6c4ff",
-                      "primary-fixed": "#dce1ff",
-                      "tertiary-fixed": "#e5e2e1",
-                      "tertiary-container": "#686767",
-                      "on-primary": "#002780",
-                      "outline": "#8d90a2",
-                      "on-tertiary-fixed": "#1b1b1c",
-                      "background": "#12131a",
-                      "on-secondary": "#313030",
-                      "secondary-fixed": "#e5e2e1",
-                      "surface-tint": "#b6c4ff",
-                      "on-error": "#690005",
-                      "tertiary": "#c8c6c5",
-                      "on-background": "#e2e1eb",
-                      "on-error-container": "#ffdad6",
-                      "surface": "#12131a",
-                      "primary-container": "#0055ff",
-                      "on-secondary-fixed-variant": "#474646",
-                      "inverse-on-surface": "#2f3037",
-                      "secondary-fixed-dim": "#c8c6c5",
-                      "inverse-primary": "#004dea",
-                      "on-tertiary": "#303030",
-                      "on-primary-container": "#e3e6ff",
-                      "surface-container-low": "#1a1b22",
-                      "surface-container": "#1e1f26",
-                      "on-secondary-container": "#bab8b7",
-                      "secondary": "#c8c6c5",
-                      "inverse-surface": "#e2e1eb"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.125rem",
-                      "lg": "0.25rem",
-                      "xl": "0.5rem",
-                      "full": "0.75rem"
-              },
-              "spacing": {
-                      "md": "16px",
-                      "gutter": "24px",
-                      "xl": "40px",
-                      "sm": "8px",
-                      "lg": "24px",
-                      "xs": "4px",
-                      "unit": "4px",
-                      "container-max": "1200px",
-                      "xxl": "80px"
-              },
-              "fontFamily": {
-                      "body-md": ["Inter"],
-                      "code": ["monospace"],
-                      "label-caps": ["Inter"],
-                      "h3": ["Inter"],
-                      "h2": ["Inter"],
-                      "h1": ["Inter"],
-                      "body-lg": ["Inter"]
-              },
-              "fontSize": {
-                      "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
-                      "code": ["14px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}],
-                      "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
-                      "h3": ["24px", {"lineHeight": "1.3", "letterSpacing": "0", "fontWeight": "600"}],
-                      "h2": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
-                      "h1": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                      "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}]
-              }
-            },
+  <!-- Google Fonts: Plus Jakarta Sans, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- Material Symbols Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              darkest: "#090D16",
+              card: "#0F172A",
+              elevated: "#1E293B",
+              cyan: "#38BDF8",
+              indigo: "#818CF8",
+              accent: "#38BDF8",
+              muted: "#94A3B8",
+              light: "#F8FAFC",
+            }
           },
+          fontFamily: {
+            sans: ["'Plus Jakarta Sans'", "'Inter'", "sans-serif"],
+            mono: ["'JetBrains Mono'", "monospace"],
+          },
+          boxShadow: {
+            'glow-cyan': '0 0 25px -4px rgba(56, 189, 248, 0.25)',
+            'glow-indigo': '0 0 25px -4px rgba(129, 140, 248, 0.25)',
+          }
         }
-    </script>
+      }
+    };
+  </script>
+
+  <!-- Custom CSS Design System -->
+  <link href="./styles.css" rel="stylesheet" />
 </head>
-<body class="font-body-md">
-<!-- TopNavBar -->
-<header class="sticky top-0 w-full z-50 bg-[#050505] border-b border-[#222222]">
-<nav class="flex items-center justify-between h-16 max-w-[1200px] mx-auto px-6">
-<div class="text-xl font-bold tracking-tighter text-white font-h3 uppercase">ARCHITECT.LOG</div>
-<div class="hidden md:flex items-center gap-8 font-['Inter'] text-sm tracking-tight" data-nav-links>
-<a class="text-[#0055FF] border-b-2 border-[#0055FF] pb-1 transition-colors duration-200" href="#home">Home</a>
-<a class="text-[#A1A1AA] hover:text-white transition-colors duration-200" href="#about">About</a>
-<a class="text-[#A1A1AA] hover:text-white transition-colors duration-200" href="#tech">Tech Stack</a>
-<a class="text-[#A1A1AA] hover:text-white transition-colors duration-200" href="#projects">Projects</a>
-<a class="text-[#A1A1AA] hover:text-white transition-colors duration-200" href="#journey">Journey</a>
-<a class="text-[#A1A1AA] hover:text-white transition-colors duration-200" href="#contact">Contact</a>
-</div>
-<button class="bg-[#0055FF] text-white px-5 py-2 text-sm font-semibold hover:opacity-90 active:scale-95 transition-all" data-scroll-target="#contact" type="button">Resume</button>
-</nav>
-</header>
-<main class="max-w-[1200px] mx-auto px-6">
-<!-- Hero Section -->
-<section class="py-20 md:py-32 flex flex-col md:flex-row items-center gap-12" id="home">
-<div class="flex-1 space-y-6">
-<div class="flex items-center gap-2">
-<span class="w-3 h-3 rounded-full bg-primary-container animate-pulse"></span>
-<span class="font-label-caps text-label-caps text-[#A1A1AA]">FORMÁNDOME PARA NUEVAS OPORTUNIDADES</span>
-</div>
-<h1 class="font-h1 text-h1 leading-none">Diego Andres Parra | <span class="text-primary-container">Desarrollador Full Stack & Especialista en Automatización</span></h1>
-<p class="font-body-lg text-body-lg text-[#A1A1AA] max-w-xl">Desarrollador Full Stack especializado en automatizaciones con n8n, desarrollo web y Python. Apasionado por integrar soluciones inteligentes con IA para crear aplicaciones eficientes y escalables.</p>
-<div class="flex gap-4 pt-4">
-<button class="bg-primary-container text-white px-8 py-4 font-semibold hover:brightness-110 transition-all" data-scroll-target="#projects" type="button">Ver Proyectos</button>
-<button class="border border-[#222222] bg-transparent text-white px-8 py-4 font-semibold hover:bg-[#121212] transition-all" data-scroll-target="#contact" type="button">Contactar</button>
-</div>
-</div>
-<div class="w-full md:w-[400px] aspect-square tonal-card p-4 relative overflow-hidden group">
-<img alt="Diego Andres Parra" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Close-up portrait of a young professional man with a confident expression in a tech office environment with blue ambient lighting" src="./WhatsApp%20Image%202026-04-23%20at%2011.07.42%20PM.jpeg"/>
-<div class="absolute inset-0 bg-primary-container/10 pointer-events-none"></div>
-</div>
-</section>
-<!-- About & Tech Stack Bento -->
-<section class="py-20" id="about">
-<div class="bento-grid">
-<!-- About Me -->
-<div class="col-span-12 md:col-span-8 tonal-card p-8 flex flex-col justify-between">
-<div>
-<h3 class="font-h3 text-h3 mb-6 text-white">About Me</h3>
-<p class="font-body-md text-body-md text-[#A1A1AA] mb-4 break-words">
-                            Soy un desarrollador Full Stack apasionado por la automatización y el desarrollo web. Mi enfoque principal es crear soluciones eficientes utilizando n8n para automatizaciones, Python para backend y lógica de datos, e integrando herramientas de IA para potenciar las aplicaciones.
-                        </p>
-<p class="font-body-md text-body-md text-[#A1A1AA] break-words">
-                            Domino el ciclo completo de desarrollo web, desde el frontend hasta el backend, utilizando Git para control de versiones. Me especializo en construir flujos de trabajo automatizados y aplicaciones web escalables que combinan tecnología moderna con inteligencia artificial.
-                        </p>
-</div>
-<div class="mt-8 flex gap-4 text-primary-container">
-<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
-<span class="material-symbols-outlined" data-icon="integration_instructions">integration_instructions</span>
-<span class="material-symbols-outlined" data-icon="code">code</span>
-</div>
-</div>
-<!-- Status / Quick Info -->
-<div class="col-span-12 md:col-span-4 tonal-card p-8 border-primary-container/30" id="tech">
-<h3 class="font-h3 text-h3 mb-6 text-white">Tech Stack</h3>
-<div class="flex flex-wrap gap-2">
-<span class="bg-[#1E1E1E] text-[#A1A1AA] px-3 py-1 font-label-caps text-[10px] tracking-widest">N8N</span>
-<span class="bg-[#1E1E1E] text-[#A1A1AA] px-3 py-1 font-label-caps text-[10px] tracking-widest">PYTHON</span>
-<span class="bg-[#1E1E1E] text-[#A1A1AA] px-3 py-1 font-label-caps text-[10px] tracking-widest">JAVASCRIPT</span>
-<span class="bg-[#1E1E1E] text-[#A1A1AA] px-3 py-1 font-label-caps text-[10px] tracking-widest">HTML/CSS</span>
-<span class="bg-[#1E1E1E] text-[#A1A1AA] px-3 py-1 font-label-caps text-[10px] tracking-widest">GIT</span>
-<span class="bg-[#1E1E1E] text-[#A1A1AA] px-3 py-1 font-label-caps text-[10px] tracking-widest">IA TOOLS</span>
-<span class="bg-[#1E1E1E] text-[#A1A1AA] px-3 py-1 font-label-caps text-[10px] tracking-widest">AUTOMATION</span>
-<span class="bg-[#1E1E1E] text-[#A1A1AA] px-3 py-1 font-label-caps text-[10px] tracking-widest">FULL STACK</span>
-</div>
-<div class="mt-8 space-y-4">
-<div class="space-y-1">
-<div class="flex justify-between font-label-caps text-[10px]">
-<span>AUTOMATIZACIÓN & IA</span>
-<span>85%</span>
-</div>
-<div class="w-full h-1 bg-[#222222]">
-<div class="h-full bg-primary-container w-[85%]"></div>
-</div>
-</div>
-<div class="space-y-1">
-<div class="flex justify-between font-label-caps text-[10px]">
-<span>DESARROLLO FULL STACK</span>
-<span>80%</span>
-</div>
-<div class="w-full h-1 bg-[#222222]">
-<div class="h-full bg-primary-container w-[80%]"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Projects Section -->
-<section class="py-20" id="projects">
-<h2 class="font-h2 text-h2 mb-12 border-l-4 border-primary-container pl-6 uppercase tracking-tighter">Academic Projects</h2>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<!-- Project 1 -->
-<div class="tonal-card flex flex-col group">
-<div class="h-48 overflow-hidden bg-[#1a1b22]">
-<img alt="Dashboard de Automatización con IA" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" data-alt="Dashboard showing automation workflows and AI integrations" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop"/>
-</div>
-<div class="p-8">
-<div class="flex justify-between items-start mb-4">
-<h4 class="font-h3 text-h3 text-white">Dashboard de Automatización con IA</h4>
-<span class="material-symbols-outlined text-primary-container" data-icon="link">link</span>
-</div>
-<p class="text-[#A1A1AA] mb-6 break-words">Panel de control para monitorear flujos de automatización integrados con inteligencia artificial y análisis de datos en tiempo real.</p>
-<div class="flex gap-4">
-<span class="text-xs font-bold text-primary-container">PYTHON</span>
-<span class="text-xs font-bold text-primary-container">IA</span>
-<span class="text-xs font-bold text-primary-container">AUTOMATION</span>
-</div>
-</div>
-</div>
-<!-- Project 2 -->
-<div class="tonal-card flex flex-col group">
-<div class="h-48 overflow-hidden bg-[#1a1b22]">
-<img alt="Sistema Full Stack con Git" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" data-alt="Modern web application interface with version control" src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=800&auto=format&fit=crop"/>
-</div>
-<div class="p-8">
-<div class="flex justify-between items-start mb-4">
-<h4 class="font-h3 text-h3 text-white">Sistema Full Stack con Git</h4>
-<span class="material-symbols-outlined text-primary-container" data-icon="link">link</span>
-</div>
-<p class="text-[#A1A1AA] mb-6 break-words">Aplicación web full stack desarrollada con buenas prácticas de versionamiento y despliegue continuo usando Git.</p>
-<div class="flex gap-4">
-<span class="text-xs font-bold text-primary-container">FULL STACK</span>
-<span class="text-xs font-bold text-primary-container">GIT</span>
-<span class="text-xs font-bold text-primary-container">WEB DEV</span>
-</div>
-</div>
-</div>
-<!-- Project 3 -->
-<div class="tonal-card flex flex-col group">
-<div class="h-48 overflow-hidden bg-[#1a1b22]">
-<img alt="Procesamiento de Datos con Python e IA" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" data-alt="Python code editor with AI-powered data analysis" src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=800&auto=format&fit=crop"/>
-</div>
-<div class="p-8">
-<div class="flex justify-between items-start mb-4">
-<h4 class="font-h3 text-h3 text-white">Procesamiento de Datos con Python e IA</h4>
-<span class="material-symbols-outlined text-primary-container" data-icon="link">link</span>
-</div>
-<p class="text-[#A1A1AA] mb-6 break-words">Script de Python que procesa grandes volúmenes de datos utilizando técnicas de inteligencia artificial para análisis automatizado.</p>
-<div class="flex gap-4">
-<span class="text-xs font-bold text-primary-container">PYTHON</span>
-<span class="text-xs font-bold text-primary-container">IA</span>
-<span class="text-xs font-bold text-primary-container">DATA</span>
-</div>
-</div>
-</div>
-<!-- Project 4 -->
-<div class="tonal-card flex flex-col group">
-<div class="h-48 overflow-hidden bg-[#1a1b22]">
-<img alt="Automatización con n8n de Reportes Ciudadanos" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" data-alt="Workflow automation diagram with nodes and connections in n8n" src="https://images.unsplash.com/photo-1558494949-ef2bb3db89f5?w=800&auto=format&fit=crop"/>
-</div>
-<div class="p-8">
-<div class="flex justify-between items-start mb-4">
-<h4 class="font-h3 text-h3 text-white">Automatización con n8n de Reportes Ciudadanos</h4>
-<span class="material-symbols-outlined text-primary-container" data-icon="link">link</span>
-</div>
-<p class="text-[#A1A1AA] mb-6 break-words">Sistema automatizado que procesa reportes ciudadanos mediante flujos de trabajo en n8n, integrando notificaciones y generación de informes automáticos.</p>
-<div class="flex gap-4">
-<span class="text-xs font-bold text-primary-container">N8N</span>
-<span class="text-xs font-bold text-primary-container">AUTOMATION</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Journey Section -->
-<section class="py-20" id="journey">
-<h2 class="font-h2 text-h2 mb-12 text-center uppercase tracking-tighter">Growth Journey</h2>
-<div class="relative border-l border-[#222222] ml-4 md:ml-0 md:left-1/2">
-<!-- 2026 -->
-<div class="mb-12 relative pl-10 md:pl-0">
-<div class="absolute -left-1.5 top-0 w-3 h-3 rounded-full bg-primary-container"></div>
-<div class="md:w-1/2 md:pr-12 md:text-right">
-<span class="font-label-caps text-primary-container">CURRENT</span>
-<h4 class="font-h3 text-h3 text-white mt-2">Automatización Avanzada & IA</h4>
-<p class="text-[#A1A1AA] mt-2">Implementación de soluciones complejas con n8n, integración de modelos de IA y optimización de procesos automatizados.</p>
-</div>
-</div>
-<!-- 2025 -->
-<div class="relative pl-10 md:pl-0">
-<div class="absolute -left-1.5 top-0 w-3 h-3 rounded-full bg-[#333333]"></div>
-<div class="md:w-1/2 md:ml-[50%] md:pl-12">
-<span class="font-label-caps text-[#A1A1AA]">2025</span>
-<h4 class="font-h3 text-h3 text-white mt-2">Inicios en Automatización con n8n</h4>
-<p class="text-[#A1A1AA] mt-2">Desarrollo de primeros flujos automatizados, creación de sistemas de reportes y exploración de herramientas de IA aplicadas a automatización.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Contact Section -->
-<section class="py-20" id="contact">
-<div class="tonal-card p-12 max-w-4xl mx-auto">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-<div>
-<h2 class="font-h2 text-h2 mb-6 uppercase text-white">Let's Connect</h2>
-<p class="text-[#A1A1AA] mb-8">¿Buscas un estudiante motivado para un proyecto o pasantía? Estaré encantado de conversar sobre cómo puedo aportar y seguir aprendiendo.</p>
-<div class="space-y-4">
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary-container" data-icon="mail">mail</span>
-<span class="text-white">dieguitop678@gmail.com</span>
-</div>
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary-container" data-icon="location_on">location_on</span>
-<span class="text-white">Floridablanca, Santander, CO</span>
-</div>
-</div>
-</div>
-<form class="space-y-6" data-contact-form>
-<div>
-<label class="font-label-caps text-[10px] text-[#A1A1AA] mb-2 block">NOMBRE COMPLETO</label>
-<input class="w-full bg-transparent border-b border-[#222222] focus:border-primary-container focus:ring-0 transition-colors py-2 text-white" name="name" type="text"/>
-</div>
-<div>
-<label class="font-label-caps text-[10px] text-[#A1A1AA] mb-2 block">EMAIL</label>
-<input class="w-full bg-transparent border-b border-[#222222] focus:border-primary-container focus:ring-0 transition-colors py-2 text-white" name="email" type="email"/>
-</div>
-<div>
-<label class="font-label-caps text-[10px] text-[#A1A1AA] mb-2 block">MENSAJE</label>
-<textarea class="w-full bg-transparent border-b border-[#222222] focus:border-primary-container focus:ring-0 transition-colors py-2 text-white resize-none" name="message" rows="4"></textarea>
-</div>
-<button class="w-full bg-primary-container text-white py-4 font-bold uppercase tracking-widest hover:brightness-110 transition-all" type="submit">Enviar Mensaje</button>
-<p aria-live="polite" class="hidden text-sm text-primary-container" data-form-message></p>
-</form>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full py-12 mt-20 border-t border-[#222222] bg-[#050505]">
-<div class="flex flex-col md:flex-row justify-between items-center max-w-[1200px] mx-auto px-6 gap-4 font-['Inter'] text-xs uppercase tracking-widest text-[#A1A1AA]">
-<div>© 2026 Built with Code &amp; Learning</div>
-<div class="flex gap-8">
-<a class="hover:text-[#0055FF] transition-colors duration-300" href="#">GitHub</a>
-<a class="hover:text-[#0055FF] transition-colors duration-300" href="#">LinkedIn</a>
-</div>
-</div>
-</footer>
-<script src="./script.js"></script>
-</body></html>
+<body class="bg-[#090D16] text-[#F8FAFC] antialiased selection:bg-sky-500/30 selection:text-sky-200 min-h-screen flex flex-col justify-between">
+
+  <!-- Ambient Light Effects (Layered Background) -->
+  <div class="bg-ambient-glow" aria-hidden="true"></div>
+
+  <!-- Top Navigation Bar -->
+  <header class="sticky top-0 w-full z-40 bg-[#090D16]/85 backdrop-blur-xl border-b border-slate-800/60 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a href="#hero" class="flex items-center gap-3 group focus:outline-none" aria-label="Ir al inicio">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center font-mono font-bold text-slate-950 text-lg shadow-glow-cyan group-hover:scale-105 transition-transform duration-300">
+          DP
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold tracking-tight text-white group-hover:text-sky-300 transition-colors">Diego Andrés Parra</span>
+          <span class="font-mono text-[11px] tracking-wider text-slate-400 uppercase">Backend & Automation</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300" aria-label="Navegación principal">
+        <a href="#hero" data-nav-link class="text-sky-400 font-semibold transition-colors duration-200">Inicio</a>
+        <a href="#filosofia" data-nav-link class="text-slate-400 hover:text-white transition-colors duration-200">Filosofía</a>
+        <a href="#servicios" data-nav-link class="text-slate-400 hover:text-white transition-colors duration-200">Servicios</a>
+        <a href="#stack" data-nav-link class="text-slate-400 hover:text-white transition-colors duration-200">Stack & Cloud</a>
+        <a href="#proyectos" data-nav-link class="text-slate-400 hover:text-white transition-colors duration-200">Proyectos</a>
+        <a href="#trayectoria" data-nav-link class="text-slate-400 hover:text-white transition-colors duration-200">Trayectoria</a>
+        <a href="#contacto" data-nav-link class="text-slate-400 hover:text-white transition-colors duration-200">Contacto</a>
+      </nav>
+
+      <!-- Desktop Quick Actions -->
+      <div class="hidden sm:flex items-center gap-3">
+        <button type="button" data-open-cv class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold font-mono tracking-wide btn-secondary-outline">
+          <span class="material-symbols-outlined text-base text-sky-400">description</span>
+          <span>CV (PDF)</span>
+        </button>
+        <button type="button" data-scroll-target="#contacto" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider btn-primary-glow">
+          <span>Contáctame</span>
+          <span class="material-symbols-outlined text-sm font-bold">arrow_forward</span>
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button type="button" data-mobile-menu-btn aria-expanded="false" aria-label="Abrir menú de navegación" class="lg:hidden p-2 rounded-xl border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 bg-slate-900/60 focus:outline-none">
+        <span class="material-symbols-outlined text-2xl">menu</span>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div data-mobile-menu class="hidden lg:hidden border-b border-slate-800 bg-[#0F172A]/95 backdrop-blur-2xl px-6 py-6 space-y-4">
+      <nav class="flex flex-col space-y-3 text-base font-medium">
+        <a href="#hero" data-mobile-link class="py-2 text-sky-400 hover:text-sky-300">Inicio</a>
+        <a href="#filosofia" data-mobile-link class="py-2 text-slate-300 hover:text-white">Filosofía</a>
+        <a href="#servicios" data-mobile-link class="py-2 text-slate-300 hover:text-white">Servicios</a>
+        <a href="#stack" data-mobile-link class="py-2 text-slate-300 hover:text-white">Stack & Cloud</a>
+        <a href="#proyectos" data-mobile-link class="py-2 text-slate-300 hover:text-white">Proyectos</a>
+        <a href="#trayectoria" data-mobile-link class="py-2 text-slate-300 hover:text-white">Trayectoria</a>
+        <a href="#contacto" data-mobile-link class="py-2 text-slate-300 hover:text-white">Contacto</a>
+      </nav>
+      <div class="pt-4 border-t border-slate-800/80 flex flex-col gap-3">
+        <button type="button" data-open-cv class="w-full flex justify-center items-center gap-2 py-3 rounded-xl text-sm font-semibold btn-secondary-outline">
+          <span class="material-symbols-outlined text-sky-400 text-base">description</span>
+          <span>Ver / Descargar CV (PDF)</span>
+        </button>
+        <button type="button" data-scroll-target="#contacto" class="w-full py-3 rounded-xl text-sm font-bold text-center btn-primary-glow">
+          Contáctame Directamente
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="relative z-10 max-w-7xl mx-auto px-6 space-y-28 md:space-y-36 pb-20">
+
+    <!-- ====================================================================
+         HERO & CAPA 1: IDENTIDAD PROFESIONAL
+         ==================================================================== -->
+    <section id="hero" class="pt-12 md:pt-20">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Column: Professional Presentation -->
+        <div class="lg:col-span-7 space-y-8">
+          
+          <!-- Availability Badge -->
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-slate-900/80 border border-slate-700/60 shadow-inner">
+            <span class="relative flex h-2.5 w-2.5">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+            </span>
+            <span class="text-xs font-mono font-medium tracking-wide text-slate-300">
+              Disponible para proyectos & roles estratégicos
+            </span>
+          </div>
+
+          <!-- Main Name & Value Headline -->
+          <div class="space-y-4">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+              Diego Andrés Parra
+            </h1>
+            <p class="text-xl sm:text-2xl font-semibold text-gradient-cyan leading-snug">
+              Construyo sistemas backend resilientes y automatizaciones que eliminan la ineficiencia operativa.
+            </p>
+            <p class="text-base sm:text-lg text-slate-400 max-w-2xl leading-relaxed">
+              Especialista en desarrollo backend con Java y Python, arquitecturas bajo patrón MVC, modelado relacional en la nube y orquestación inteligente de procesos con n8n e IA para escalar operaciones empresariales.
+            </p>
+          </div>
+
+          <!-- Specialty Badges -->
+          <div class="flex flex-wrap gap-2.5 pt-1">
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-mono font-semibold bg-sky-400/10 text-sky-300 border border-sky-400/20">
+              <span class="material-symbols-outlined text-sm">terminal</span>
+              Desarrollador Full Stack
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-mono font-semibold bg-indigo-400/10 text-indigo-300 border border-indigo-400/20">
+              <span class="material-symbols-outlined text-sm">cloud</span>
+              Cloud & Backend Architecture
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-mono font-semibold bg-cyan-400/10 text-cyan-300 border border-cyan-400/20">
+              <span class="material-symbols-outlined text-sm">smart_toy</span>
+              AI & Automation
+            </span>
+          </div>
+
+          <!-- Action Buttons (CTAs) -->
+          <div class="flex flex-wrap items-center gap-4 pt-4">
+            <button type="button" data-scroll-target="#proyectos" class="px-7 py-3.5 rounded-xl font-bold text-sm tracking-wide flex items-center gap-2 btn-primary-glow">
+              <span>Explorar Proyectos</span>
+              <span class="material-symbols-outlined text-base">arrow_downward</span>
+            </button>
+
+            <button type="button" data-scroll-target="#contacto" class="px-6 py-3.5 rounded-xl font-semibold text-sm tracking-wide flex items-center gap-2 btn-secondary-outline">
+              <span>Contáctame</span>
+              <span class="material-symbols-outlined text-base text-slate-400">mail</span>
+            </button>
+
+            <a href="./cv_diego_parra.pdf" download="CV_Diego_Parra_Backend.pdf" class="px-5 py-3.5 rounded-xl font-mono text-xs font-semibold tracking-wide flex items-center gap-2 border border-slate-700/80 bg-slate-900/60 hover:bg-slate-800 text-slate-200 hover:text-sky-300 transition-all">
+              <span class="material-symbols-outlined text-base text-sky-400">download</span>
+              <span>Descargar CV (PDF)</span>
+            </a>
+
+            <button type="button" data-open-cv class="px-4 py-3.5 rounded-xl font-mono text-xs font-semibold tracking-wide flex items-center gap-1.5 border border-slate-800 bg-slate-900/40 hover:bg-slate-800 text-slate-400 hover:text-sky-300 transition-all" title="Ver vista previa en pantalla">
+              <span class="material-symbols-outlined text-base text-slate-400">visibility</span>
+              <span>Ver CV</span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Profile Visual Card -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="w-full max-w-md relative group">
+            
+            <!-- Soft Glow Behind Avatar -->
+            <div class="absolute -inset-1.5 bg-gradient-to-r from-sky-400/30 to-indigo-500/30 rounded-3xl blur-xl opacity-75 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+            <div class="relative bento-card p-4 rounded-3xl overflow-hidden bg-[#0F172A]">
+              <!-- Image Container -->
+              <div class="relative w-full aspect-[4/4.5] rounded-2xl overflow-hidden bg-slate-900 border border-slate-800/80">
+                <img 
+                  src="./WhatsApp%20Image%202026-04-23%20at%2011.07.42%20PM.jpeg" 
+                  alt="Diego Andrés Parra - Desarrollador Full Stack & Backend" 
+                  class="w-full h-full object-cover object-center filter grayscale contrast-110 hover:grayscale-0 transition-all duration-700 ease-out" 
+                />
+                
+                <!-- Corner Watermark Overlay -->
+                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#090D16] via-[#090D16]/70 to-transparent p-5 pt-12 flex justify-between items-end">
+                  <div>
+                    <p class="font-bold text-white text-base">Diego A. Parra</p>
+                    <p class="text-xs text-sky-400 font-mono">Bucaramanga / Santander, CO</p>
+                  </div>
+                  <span class="text-[10px] font-mono font-medium px-2.5 py-1 rounded bg-slate-800/90 border border-slate-700/80 text-slate-300">
+                    Git Flow • Clean Code
+                  </span>
+                </div>
+              </div>
+
+              <!-- Quick Metrics Grid -->
+              <div class="grid grid-cols-3 gap-2 mt-4 pt-1">
+                <div class="surface-elevated p-2.5 rounded-xl text-center">
+                  <div class="font-mono text-sky-400 font-bold text-sm">MVC</div>
+                  <div class="text-[10px] text-slate-400 uppercase tracking-wider">Patrón Java</div>
+                </div>
+                <div class="surface-elevated p-2.5 rounded-xl text-center">
+                  <div class="font-mono text-indigo-400 font-bold text-sm">n8n + AI</div>
+                  <div class="text-[10px] text-slate-400 uppercase tracking-wider">Flujos Auto</div>
+                </div>
+                <div class="surface-elevated p-2.5 rounded-xl text-center">
+                  <div class="font-mono text-cyan-400 font-bold text-sm">MySQL</div>
+                  <div class="text-[10px] text-slate-400 uppercase tracking-wider">Cloud Relacional</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         FILOSOFÍA, MISIÓN, VISIÓN Y VALORES (Pilares Sutiles)
+         ==================================================================== -->
+    <section id="filosofia" class="pt-8">
+      <div class="mb-10 text-center md:text-left">
+        <span class="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold">Cultura de Ingeniería</span>
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-white mt-1">Filosofía, Misión y Principios</h2>
+        <p class="text-slate-400 text-sm max-w-2xl mt-2">
+          La base de cada solución de software que construyo: rigor arquitectónico, escalabilidad y resultados tangibles de negocio.
+        </p>
+      </div>
+
+      <!-- 3 Subtle Pillars Bento Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Pilar 1: Misión -->
+        <div class="bento-card p-7 flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-sky-400/10 border border-sky-400/20 text-sky-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-2xl">track_changes</span>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-mono uppercase tracking-wider text-sky-400 font-semibold">Pilar 01</span>
+              <span class="text-slate-600">•</span>
+              <h3 class="text-xl font-bold text-white">Misión</h3>
+            </div>
+            <p class="text-sm text-slate-300 leading-relaxed mt-3">
+              Diseñar soluciones de software escalables y arquitecturas backend limpias que reduzcan tiempos operativos manuales, garantizando alta disponibilidad y consistencia de datos.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800/80 text-xs font-mono text-slate-400 flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-sky-400 text-sm">speed</span>
+            Eficiencia y fiabilidad operativa
+          </div>
+        </div>
+
+        <!-- Pilar 2: Visión -->
+        <div class="bento-card p-7 flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-indigo-400/10 border border-indigo-400/20 text-indigo-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-2xl">visibility</span>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-mono uppercase tracking-wider text-indigo-400 font-semibold">Pilar 02</span>
+              <span class="text-slate-600">•</span>
+              <h3 class="text-xl font-bold text-white">Visión</h3>
+            </div>
+            <p class="text-sm text-slate-300 leading-relaxed mt-3">
+              Liderar la transformación de flujos operativos complejos hacia infraestructuras modernas y automatizadas, uniendo backend robusto con modelos de inteligencia artificial de última generación.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800/80 text-xs font-mono text-slate-400 flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-indigo-400 text-sm">rocket_launch</span>
+            Modernización e innovación continua
+          </div>
+        </div>
+
+        <!-- Pilar 3: Valores -->
+        <div class="bento-card p-7 flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-cyan-400/10 border border-cyan-400/20 text-cyan-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-2xl">verified</span>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-mono uppercase tracking-wider text-cyan-400 font-semibold">Pilar 03</span>
+              <span class="text-slate-600">•</span>
+              <h3 class="text-xl font-bold text-white">Valores</h3>
+            </div>
+            <p class="text-sm text-slate-300 leading-relaxed mt-3">
+              Código limpio (Clean Architecture), rigor en el versionamiento (Git Flow estricto con commits semánticos) y enfoque pragmático en el retorno de inversión técnica para las organizaciones.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800/80 text-xs font-mono text-slate-400 flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-cyan-400 text-sm">integration_instructions</span>
+            Buenas prácticas sin compromisos
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         CAPA 2: SERVICIOS ESTRELLA & SOLUCIONES (Nuevo Bloque)
+         ==================================================================== -->
+    <section id="servicios" class="pt-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold">Oferta de Valor Profesional</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mt-1">Servicios Estrella & Soluciones</h2>
+          <p class="text-slate-400 text-base max-w-2xl mt-2">
+            No ofrezco simplemente líneas de código; resuelvo cuellos de botella de negocio con ingeniería de software estructurada.
+          </p>
+        </div>
+        <div class="flex items-center gap-2 text-xs font-mono text-slate-400 bg-slate-900/80 border border-slate-800 px-4 py-2 rounded-xl">
+          <span class="w-2 h-2 rounded-full bg-sky-400"></span>
+          3 Soluciones Especializadas
+        </div>
+      </div>
+
+      <!-- 3 Service Cards Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- Card 1: Backend & Data Architecture -->
+        <div class="bento-card p-8 flex flex-col justify-between group relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-sky-500/5 rounded-full blur-2xl group-hover:bg-sky-500/10 transition-colors"></div>
+          
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-sky-400/10 border border-sky-400/25 text-sky-400 flex items-center justify-center mb-6 group-hover:scale-105 transition-transform">
+              <span class="material-symbols-outlined text-3xl">database</span>
+            </div>
+
+            <span class="text-xs font-mono text-sky-400 font-semibold tracking-wider uppercase">Servicio 01</span>
+            <h3 class="text-xl font-bold text-white mt-1 mb-3">
+              Desarrollo Backend & Arquitectura de Datos
+            </h3>
+
+            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+              Diseño de bases de datos relacionales en la nube, APIs y sistemas de gestión empresarial bajo patrón MVC.
+            </p>
+
+            <!-- What problem is solved -->
+            <div class="space-y-3 pt-4 border-t border-slate-800/80">
+              <div class="text-xs font-semibold text-slate-200 uppercase tracking-wider font-mono">Problemas que elimino:</div>
+              <ul class="space-y-2 text-xs text-slate-400">
+                <li class="flex items-start gap-2">
+                  <span class="material-symbols-outlined text-sky-400 text-base shrink-0">check_circle</span>
+                  <span>Inconsistencia y pérdida de trazabilidad en datos críticos.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="material-symbols-outlined text-sky-400 text-base shrink-0">check_circle</span>
+                  <span>Lógica acoplada que dificulta el mantenimiento del software.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="material-symbols-outlined text-sky-400 text-base shrink-0">check_circle</span>
+                  <span>Fallas de concurrencia y validación en cargas simultáneas.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-4 border-t border-slate-800 flex flex-wrap gap-1.5 font-mono text-[11px]">
+            <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Java MVC</span>
+            <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">MySQL Cloud</span>
+            <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">ERD / DDL</span>
+            <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Auditoría Flat-File</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Process Automation -->
+        <div class="bento-card p-8 flex flex-col justify-between group relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-indigo-500/5 rounded-full blur-2xl group-hover:bg-indigo-500/10 transition-colors"></div>
+
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-indigo-400/10 border border-indigo-400/25 text-indigo-400 flex items-center justify-center mb-6 group-hover:scale-105 transition-transform">
+              <span class="material-symbols-outlined text-3xl">hub</span>
+            </div>
+
+            <span class="text-xs font-mono text-indigo-400 font-semibold tracking-wider uppercase">Servicio 02</span>
+            <h3 class="text-xl font-bold text-white mt-1 mb-3">
+              Automatización de Procesos Operativos
+            </h3>
+
+            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+              Integración de flujos de trabajo inteligentes con n8n, Python y modelos de IA para eliminar tareas manuales.
+            </p>
+
+            <!-- What problem is solved -->
+            <div class="space-y-3 pt-4 border-t border-slate-800/80">
+              <div class="text-xs font-semibold text-slate-200 uppercase tracking-wider font-mono">Problemas que elimino:</div>
+              <ul class="space-y-2 text-xs text-slate-400">
+                <li class="flex items-start gap-2">
+                  <span class="material-symbols-outlined text-indigo-400 text-base shrink-0">check_circle</span>
+                  <span>Horas desperdiciadas en clasificación y triaje manual de solicitudes.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="material-symbols-outlined text-indigo-400 text-base shrink-0">check_circle</span>
+                  <span>Silos entre plataformas que requieren copiar y pegar datos.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="material-symbols-outlined text-indigo-400 text-base shrink-0">check_circle</span>
+                  <span>Retardos de días en la notificación al cliente o usuario final.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-4 border-t border-slate-800 flex flex-wrap gap-1.5 font-mono text-[11px]">
+            <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">n8n Workflows</span>
+            <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Python Scripts</span>
+            <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">LLM Prompting</span>
+            <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Webhooks & APIs</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Full Stack & Dashboards -->
+        <div class="bento-card p-8 flex flex-col justify-between group relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-cyan-500/5 rounded-full blur-2xl group-hover:bg-cyan-500/10 transition-colors"></div>
+
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-cyan-400/10 border border-cyan-400/25 text-cyan-400 flex items-center justify-center mb-6 group-hover:scale-105 transition-transform">
+              <span class="material-symbols-outlined text-3xl">monitoring</span>
+            </div>
+
+            <span class="text-xs font-mono text-cyan-400 font-semibold tracking-wider uppercase">Servicio 03</span>
+            <h3 class="text-xl font-bold text-white mt-1 mb-3">
+              Desarrollo Full Stack & Paneles de Control
+            </h3>
+
+            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+              Creación de dashboards y plataformas interactivas para el monitoreo de datos y operaciones en tiempo real.
+            </p>
+
+            <!-- What problem is solved -->
+            <div class="space-y-3 pt-4 border-t border-slate-800/80">
+              <div class="text-xs font-semibold text-slate-200 uppercase tracking-wider font-mono">Problemas que elimino:</div>
+              <ul class="space-y-2 text-xs text-slate-400">
+                <li class="flex items-start gap-2">
+                  <span class="material-symbols-outlined text-cyan-400 text-base shrink-0">check_circle</span>
+                  <span>Ceguera operativa por falta de dashboards de telemetría en vivo.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="material-symbols-outlined text-cyan-400 text-base shrink-0">check_circle</span>
+                  <span>Interfaces pesadas y confusas que frustran a los operadores.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="material-symbols-outlined text-cyan-400 text-base shrink-0">check_circle</span>
+                  <span>Inestabilidad en despliegues por falta de control de versiones.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-4 border-t border-slate-800 flex flex-wrap gap-1.5 font-mono text-[11px]">
+            <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">JavaScript / ES6</span>
+            <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Tailwind CSS</span>
+            <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">RESTful APIs</span>
+            <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Git Flow Riguroso</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SUB-BARRA: CERTIFICACIONES & STACK TÉCNICO (Categorizado)
+         ==================================================================== -->
+    <section id="stack" class="pt-6">
+      <div class="bento-card p-8 md:p-10">
+        
+        <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-slate-800/80 pb-6 mb-8 gap-4">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-sky-400 text-xl">layers</span>
+              <h3 class="text-xl md:text-2xl font-bold text-white">Certificaciones & Stack Técnico Categorizado</h3>
+            </div>
+            <p class="text-xs md:text-sm text-slate-400 mt-1">
+              Herramientas, lenguajes y metodologías dominadas para el ciclo completo de desarrollo.
+            </p>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="px-3 py-1 rounded-md text-[11px] font-mono bg-sky-400/10 text-sky-300 border border-sky-400/20">
+              Clean Architecture
+            </span>
+            <span class="px-3 py-1 rounded-md text-[11px] font-mono bg-indigo-400/10 text-indigo-300 border border-indigo-400/20">
+              Git Flow Specialist
+            </span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Categoría 1: Lenguajes -->
+          <div class="surface-elevated p-5 rounded-xl space-y-3">
+            <div class="flex items-center gap-2 text-sky-400 font-mono text-xs uppercase font-semibold">
+              <span class="material-symbols-outlined text-base">code</span>
+              <span>1. Lenguajes Core</span>
+            </div>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2.5 py-1 bg-slate-900/90 text-slate-200 text-xs rounded border border-slate-700/60 font-mono font-medium">Java (SE/MVC)</span>
+              <span class="px-2.5 py-1 bg-slate-900/90 text-slate-200 text-xs rounded border border-slate-700/60 font-mono font-medium">Python 3</span>
+              <span class="px-2.5 py-1 bg-slate-900/90 text-slate-200 text-xs rounded border border-slate-700/60 font-mono font-medium">JavaScript (ES6+)</span>
+              <span class="px-2.5 py-1 bg-slate-900/90 text-slate-200 text-xs rounded border border-slate-700/60 font-mono font-medium">SQL (DDL / DML)</span>
+              <span class="px-2.5 py-1 bg-slate-900/90 text-slate-200 text-xs rounded border border-slate-700/60 font-mono font-medium">HTML5 & CSS3</span>
+            </div>
+            <p class="text-[11px] text-slate-400 pt-1 leading-relaxed">
+              Programación orientada a objetos estricta, validaciones tipadas y manejo robusto de excepciones.
+            </p>
+          </div>
+
+          <!-- Categoría 2: Bases de Datos & Persistencia -->
+          <div class="surface-elevated p-5 rounded-xl space-y-3">
+            <div class="flex items-center gap-2 text-indigo-400 font-mono text-xs uppercase font-semibold">
+              <span class="material-symbols-outlined text-base">storage</span>
+              <span>2. Bases de Datos & Cloud</span>
+            </div>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2.5 py-1 bg-slate-900/90 text-slate-200 text-xs rounded border border-slate-700/60 font-mono font-medium">MySQL Cloud</span>
+              <span class="px-2.5 py-1 bg-slate-900/90 text-slate-200 text-xs rounded border border-slate-700/60 font-mono font-medium">PostgreSQL</span>
+              <span class="px-2.5 py-1 bg-slate-900/90 text-slate-200 text-xs rounded border border-slate-700/60 font-mono font-medium">Modelado ERD</span>
+              <span class="px-2.5 py-1 bg-slate-900/90 text-slate-200 text-xs rounded border border-slate-700/60 font-mono font-medium">Restricciones & FK</span>
+              <span class="px-2.5 py-1 bg-slate-900/90 text-slate-200 text-xs rounded border border-slate-700/60 font-mono font-medium">Transacciones ACID</span>
+            </div>
+            <p class="text-[11px] text-slate-400 pt-1 leading-relaxed">
+              Persistencia segura en servidores remotos, normalización de esquemas y queries optimizadas.
+            </p>
+          </div>
+
+          <!-- Categoría 3: Automatización & IA -->
+          <div class="surface-elevated p-5 rounded-xl space-y-3">
+            <div class="flex items-center gap-2 text-cyan-400 font-mono text-xs uppercase font-semibold">
+              <span class="material-symbols-outlined text-base">smart_toy</span>
+              <span>3. Automatización & IA</span>
+            </div>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2.5 py-1 bg-slate-900/90 text-slate-200 text-xs rounded border border-slate-700/60 font-mono font-medium">n8n Automation</span>
+              <span class="px-2.5 py-1 bg-slate-900/90 text-slate-200 text-xs rounded border border-slate-700/60 font-mono font-medium">OpenAI / LLMs</span>
+              <span class="px-2.5 py-1 bg-slate-900/90 text-slate-200 text-xs rounded border border-slate-700/60 font-mono font-medium">Webhooks</span>
+              <span class="px-2.5 py-1 bg-slate-900/90 text-slate-200 text-xs rounded border border-slate-700/60 font-mono font-medium">Telegram / Email APIs</span>
+              <span class="px-2.5 py-1 bg-slate-900/90 text-slate-200 text-xs rounded border border-slate-700/60 font-mono font-medium">Data Extraction</span>
+            </div>
+            <p class="text-[11px] text-slate-400 pt-1 leading-relaxed">
+              Flujos autónomos para clasificación de texto, orquestación de servicios y disparadores reactivos.
+            </p>
+          </div>
+
+          <!-- Categoría 4: Herramientas & Prácticas -->
+          <div class="surface-elevated p-5 rounded-xl space-y-3">
+            <div class="flex items-center gap-2 text-emerald-400 font-mono text-xs uppercase font-semibold">
+              <span class="material-symbols-outlined text-base">alt_route</span>
+              <span>4. Herramientas & Rigor</span>
+            </div>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2.5 py-1 bg-slate-900/90 text-slate-200 text-xs rounded border border-slate-700/60 font-mono font-medium">Git Flow Riguroso</span>
+              <span class="px-2.5 py-1 bg-slate-900/90 text-slate-200 text-xs rounded border border-slate-700/60 font-mono font-medium">Conventional Commits</span>
+              <span class="px-2.5 py-1 bg-slate-900/90 text-slate-200 text-xs rounded border border-slate-700/60 font-mono font-medium">Linux CLI</span>
+              <span class="px-2.5 py-1 bg-slate-900/90 text-slate-200 text-xs rounded border border-slate-700/60 font-mono font-medium">REST Architecture</span>
+              <span class="px-2.5 py-1 bg-slate-900/90 text-slate-200 text-xs rounded border border-slate-700/60 font-mono font-medium">Auditoría Flat-File</span>
+            </div>
+            <p class="text-[11px] text-slate-400 pt-1 leading-relaxed">
+              Flujos de ramas `main`, `develop` y `feature/*` con commits semánticos en inglés y trazabilidad 100%.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         CAPA 3: EVIDENCIA Y PROYECTOS (Formato Contexto - Rol - Resultados)
+         ==================================================================== -->
+    <section id="proyectos" class="pt-8">
+      
+      <!-- Section Header & Filter Controls -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+        <div>
+          <span class="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold">Evidencia de Alto Impacto</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mt-1">Proyectos de Ingeniería</h2>
+          <p class="text-slate-400 text-base max-w-2xl mt-2">
+            Desarrollos respaldados por la rúbrica profesional: Contexto de negocio real, Rol e implementación técnica detallada, y Resultados cuantificables.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap items-center gap-2">
+          <button type="button" data-filter-btn="all" class="px-3.5 py-1.5 rounded-lg text-xs font-mono font-semibold bg-sky-400/20 text-sky-300 border border-sky-400/40 transition-all">
+            Todos (4)
+          </button>
+          <button type="button" data-filter-btn="backend" class="px-3.5 py-1.5 rounded-lg text-xs font-mono font-semibold bg-slate-900/60 text-slate-400 border border-slate-800/80 hover:text-white transition-all">
+            Backend & Java
+          </button>
+          <button type="button" data-filter-btn="automation" class="px-3.5 py-1.5 rounded-lg text-xs font-mono font-semibold bg-slate-900/60 text-slate-400 border border-slate-800/80 hover:text-white transition-all">
+            Automatización & IA
+          </button>
+          <button type="button" data-filter-btn="fullstack" class="px-3.5 py-1.5 rounded-lg text-xs font-mono font-semibold bg-slate-900/60 text-slate-400 border border-slate-800/80 hover:text-white transition-all">
+            Full Stack
+          </button>
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- ================================================================
+             PROYECTO 1 (OBLIGATORIO): RapidExpress – Java Backend
+             ================================================================ -->
+        <article data-project-category="backend" class="bento-card rounded-2xl flex flex-col justify-between overflow-hidden group">
+          <div>
+            <!-- Project Image Container -->
+            <div class="relative h-64 overflow-hidden bg-slate-950">
+              <img 
+                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&auto=format&fit=crop" 
+                alt="RapidExpress - Sistema de Gestión Logística, Flotas y Rutas" 
+                class="w-full h-full object-cover opacity-75 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 ease-out" 
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-[#0F172A]/40 to-transparent"></div>
+              
+              <!-- Badges Over Image -->
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-md text-xs font-mono font-bold bg-sky-500/90 text-slate-950 shadow-md">
+                  ★ Proyecto Destacado Backend
+                </span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-900/90 text-sky-300 border border-sky-400/30">
+                  Java + MySQL Cloud
+                </span>
+              </div>
+            </div>
+
+            <!-- Content Body -->
+            <div class="p-7 space-y-6">
+              
+              <!-- Title and Action Links -->
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <h3 class="text-2xl font-bold text-white group-hover:text-sky-300 transition-colors">
+                  RapidExpress – Sistema de Gestión Logística, Flotas y Rutas
+                </h3>
+              </div>
+
+              <!-- Tech Tags -->
+              <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+                <span class="px-2.5 py-1 rounded bg-sky-400/10 text-sky-300 border border-sky-400/25">Java</span>
+                <span class="px-2.5 py-1 rounded bg-indigo-400/10 text-indigo-300 border border-indigo-400/25">MySQL Cloud</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300">MVC Pattern</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300">Git Flow Riguroso</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300">CLI / Backend</span>
+              </div>
+
+              <!-- Context -->
+              <div class="space-y-1">
+                <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-sm text-sky-400">info</span>
+                  Contexto del Problema
+                </h4>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                  Plataforma backend desarrollada para una compañía de mensajería que sufría severas ineficiencias por el seguimiento manual de envíos, asignación empírica de vehículos y falta de control de capacidad de carga.
+                </p>
+              </div>
+
+              <!-- Mi Rol & Implementación -->
+              <div class="space-y-2">
+                <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-sm text-indigo-400">engineering</span>
+                  Mi Rol & Implementación Técnica
+                </h4>
+                <ul class="space-y-2 text-xs text-slate-300 leading-relaxed">
+                  <li class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-sky-400 text-base shrink-0 mt-0.5">check_circle</span>
+                    <span><strong>Diseñé el modelo relacional</strong> (diagrama ERD normalizado, DDL con restricciones de integridad referencial y scripts DML) persistido en una base de datos MySQL alojada en la nube.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-sky-400 text-base shrink-0 mt-0.5">check_circle</span>
+                    <span><strong>Implementé la arquitectura Modelo-Vista-Controlador (MVC)</strong> en Java puro, integrando validación estricta de capacidades volumétricas/peso y control de concurrencia en la asignación de rutas.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-sky-400 text-base shrink-0 mt-0.5">check_circle</span>
+                    <span><strong>Diseñé el módulo de auditoría en archivos planos</strong> para garantizar la trazabilidad inmutable de operaciones críticas, cambios de estado de paquetes e historial de mantenimiento de flota.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-sky-400 text-base shrink-0 mt-0.5">check_circle</span>
+                    <span><strong>Apliqué Git Flow riguroso</strong> con más de 10 commits semánticos en inglés, segmentación en ramas <code>develop</code> y <code>feature/*</code>, garantizando un historial de versionamiento profesional y reproducible.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Resultados & Impacto -->
+              <div class="p-4 rounded-xl bg-sky-950/30 border border-sky-400/25 space-y-1">
+                <h4 class="text-xs font-mono uppercase tracking-wider text-sky-400 font-bold flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-sm">trending_up</span>
+                  Resultados Alcanzados
+                </h4>
+                <p class="text-xs text-slate-200 leading-relaxed">
+                  Centralización del <strong>100% de la operativa logística</strong> (vehículos, conductores, paquetes y rutas), garantizando consistencia absoluta de estados, eliminación de sobrecargas y generación instantánea de informes de rendimiento operativo.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Card Footer Links -->
+          <div class="px-7 py-4 bg-slate-900/60 border-t border-slate-800/80 flex items-center justify-between">
+            <a href="https://github.com/DiegoAndresParra14" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-mono font-semibold text-slate-300 hover:text-sky-300 transition-colors">
+              <span class="material-symbols-outlined text-base">code</span>
+              <span>Repositorio en GitHub</span>
+            </a>
+            <a href="#contacto" class="inline-flex items-center gap-1.5 text-xs font-mono text-sky-400 hover:underline">
+              <span>Solicitar Demo Técnica</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- ================================================================
+             PROYECTO 2: AI Automation Hub
+             ================================================================ -->
+        <article data-project-category="automation" class="bento-card rounded-2xl flex flex-col justify-between overflow-hidden group">
+          <div>
+            <!-- Project Image Container -->
+            <div class="relative h-64 overflow-hidden bg-slate-950">
+              <img 
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop" 
+                alt="Dashboard de Automatización con IA" 
+                class="w-full h-full object-cover opacity-75 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 ease-out" 
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-[#0F172A]/40 to-transparent"></div>
+              
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-md text-xs font-mono font-bold bg-indigo-500/90 text-white shadow-md">
+                  AI & Operations
+                </span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-900/90 text-indigo-300 border border-indigo-400/30">
+                  Python + Analytics
+                </span>
+              </div>
+            </div>
+
+            <!-- Content Body -->
+            <div class="p-7 space-y-6">
+              
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <h3 class="text-2xl font-bold text-white group-hover:text-indigo-300 transition-colors">
+                  AI Automation Hub – Dashboard de Telemetría y Flujos de IA
+                </h3>
+              </div>
+
+              <!-- Tech Tags -->
+              <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+                <span class="px-2.5 py-1 rounded bg-indigo-400/10 text-indigo-300 border border-indigo-400/25">Python</span>
+                <span class="px-2.5 py-1 rounded bg-sky-400/10 text-sky-300 border border-sky-400/25">OpenAI APIs</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300">n8n Integration</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300">FastAPI</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300">Real-time Telemetry</span>
+              </div>
+
+              <!-- Context -->
+              <div class="space-y-1">
+                <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-sm text-indigo-400">info</span>
+                  Contexto del Problema
+                </h4>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                  Equipos de soporte y operaciones carecían de una vista unificada para supervisar decenas de flujos automatizados en ejecución, lo que causaba demoras críticas en la identificación de excepciones y fallas silenciosas.
+                </p>
+              </div>
+
+              <!-- Mi Rol & Implementación -->
+              <div class="space-y-2">
+                <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-sm text-sky-400">engineering</span>
+                  Mi Rol & Implementación Técnica
+                </h4>
+                <ul class="space-y-2 text-xs text-slate-300 leading-relaxed">
+                  <li class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-indigo-400 text-base shrink-0 mt-0.5">check_circle</span>
+                    <span><strong>Desarrollé la arquitectura analítica en Python</strong> encargada de consumir logs de ejecución en tiempo real mediante endpoints asíncronos y webhooks.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-indigo-400 text-base shrink-0 mt-0.5">check_circle</span>
+                    <span><strong>Integré modelos de IA de procesamiento de lenguaje natural</strong> para clasificar la severidad de las excepciones y formular diagnósticos preliminares automáticos.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-indigo-400 text-base shrink-0 mt-0.5">check_circle</span>
+                    <span><strong>Construí el panel de visualización centralizada</strong> con métricas de tiempo de ciclo, tasas de error porcentuales y alertas push ante degradación del servicio.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Resultados & Impacto -->
+              <div class="p-4 rounded-xl bg-indigo-950/30 border border-indigo-400/25 space-y-1">
+                <h4 class="text-xs font-mono uppercase tracking-wider text-indigo-400 font-bold flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-sm">trending_up</span>
+                  Resultados Alcanzados
+                </h4>
+                <p class="text-xs text-slate-200 leading-relaxed">
+                  <strong>Reducción del 70% en el tiempo medio de detección</strong> de fallos operacionales (MTTD) y consolidación del 100% de la telemetría en un solo punto de control intuitivo.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Card Footer Links -->
+          <div class="px-7 py-4 bg-slate-900/60 border-t border-slate-800/80 flex items-center justify-between">
+            <a href="https://github.com/DiegoAndresParra14" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-mono font-semibold text-slate-300 hover:text-indigo-300 transition-colors">
+              <span class="material-symbols-outlined text-base">code</span>
+              <span>Repositorio en GitHub</span>
+            </a>
+            <a href="#contacto" class="inline-flex items-center gap-1.5 text-xs font-mono text-indigo-400 hover:underline">
+              <span>Consultar Detalles</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- ================================================================
+             PROYECTO 3: Enterprise Core – Sistema Full Stack con Git
+             ================================================================ -->
+        <article data-project-category="fullstack" class="bento-card rounded-2xl flex flex-col justify-between overflow-hidden group">
+          <div>
+            <!-- Project Image Container -->
+            <div class="relative h-64 overflow-hidden bg-slate-950">
+              <img 
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop" 
+                alt="Enterprise Core - Sistema Full Stack con Git" 
+                class="w-full h-full object-cover opacity-75 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 ease-out" 
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-[#0F172A]/40 to-transparent"></div>
+              
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-md text-xs font-mono font-bold bg-cyan-500/90 text-slate-950 shadow-md">
+                  Clean Architecture
+                </span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-900/90 text-cyan-300 border border-cyan-400/30">
+                  Full Stack + Git Flow
+                </span>
+              </div>
+            </div>
+
+            <!-- Content Body -->
+            <div class="p-7 space-y-6">
+              
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <h3 class="text-2xl font-bold text-white group-hover:text-cyan-300 transition-colors">
+                  Enterprise Core – Plataforma Modular & Control de Versiones Riguroso
+                </h3>
+              </div>
+
+              <!-- Tech Tags -->
+              <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+                <span class="px-2.5 py-1 rounded bg-cyan-400/10 text-cyan-300 border border-cyan-400/25">JavaScript ES6+</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300">Node.js</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300">Tailwind CSS</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300">Git Flow Avanzado</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300">REST APIs</span>
+              </div>
+
+              <!-- Context -->
+              <div class="space-y-1">
+                <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-sm text-cyan-400">info</span>
+                  Contexto del Problema
+                </h4>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                  Organizaciones con equipos de trabajo distribuidos requerían un sistema web modular y mantenible, eliminando conflictos de fusión en el repositorio y garantizando despliegues estables sin romper código en producción.
+                </p>
+              </div>
+
+              <!-- Mi Rol & Implementación -->
+              <div class="space-y-2">
+                <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-sm text-sky-400">engineering</span>
+                  Mi Rol & Implementación Técnica
+                </h4>
+                <ul class="space-y-2 text-xs text-slate-300 leading-relaxed">
+                  <li class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-cyan-400 text-base shrink-0 mt-0.5">check_circle</span>
+                    <span><strong>Implementé una arquitectura desacoplada</strong> con frontend dinámico y endpoints REST estructurados con validación estricta de esquemas de datos.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-cyan-400 text-base shrink-0 mt-0.5">check_circle</span>
+                    <span><strong>Establecí la metodología Git Flow completa</strong> con políticas de ramas protegidas, prefijos semánticos, pruebas de integración y convención Conventional Commits.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-cyan-400 text-base shrink-0 mt-0.5">check_circle</span>
+                    <span><strong>Diseñé la interfaz de usuario orientada a microcomponentes</strong> reusables con Tailwind CSS, garantizando óptima accesibilidad y rendimiento auditado con Lighthouse.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Resultados & Impacto -->
+              <div class="p-4 rounded-xl bg-cyan-950/30 border border-cyan-400/25 space-y-1">
+                <h4 class="text-xs font-mono uppercase tracking-wider text-cyan-400 font-bold flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-sm">trending_up</span>
+                  Resultados Alcanzados
+                </h4>
+                <p class="text-xs text-slate-200 leading-relaxed">
+                  <strong>Cero divergencias entre entornos</strong> de desarrollo y producción, acelerando el ciclo de incorporación de nuevas características con trazabilidad auditable del 100% de cambios.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Card Footer Links -->
+          <div class="px-7 py-4 bg-slate-900/60 border-t border-slate-800/80 flex items-center justify-between">
+            <a href="https://github.com/DiegoAndresParra14" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-mono font-semibold text-slate-300 hover:text-cyan-300 transition-colors">
+              <span class="material-symbols-outlined text-base">code</span>
+              <span>Repositorio en GitHub</span>
+            </a>
+            <a href="#contacto" class="inline-flex items-center gap-1.5 text-xs font-mono text-cyan-400 hover:underline">
+              <span>Ver Arquitectura</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- ================================================================
+             PROYECTO 4: CitizenVoice – Flujos n8n de Reportes Ciudadanos
+             ================================================================ -->
+        <article data-project-category="automation" class="bento-card rounded-2xl flex flex-col justify-between overflow-hidden group">
+          <div>
+            <!-- Project Image Container -->
+            <div class="relative h-64 overflow-hidden bg-slate-950">
+              <img 
+                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop" 
+                alt="Flujos n8n de Reportes Ciudadanos y Clasificación IA" 
+                class="w-full h-full object-cover opacity-75 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 ease-out" 
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-[#0F172A]/40 to-transparent"></div>
+              
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-md text-xs font-mono font-bold bg-sky-500/90 text-slate-950 shadow-md">
+                  Smart Automation
+                </span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-900/90 text-sky-300 border border-sky-400/30">
+                  n8n + Webhooks
+                </span>
+              </div>
+            </div>
+
+            <!-- Content Body -->
+            <div class="p-7 space-y-6">
+              
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <h3 class="text-2xl font-bold text-white group-hover:text-sky-300 transition-colors">
+                  CitizenVoice – Automatización n8n & Clasificación con IA
+                </h3>
+              </div>
+
+              <!-- Tech Tags -->
+              <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+                <span class="px-2.5 py-1 rounded bg-sky-400/10 text-sky-300 border border-sky-400/25">n8n Automation</span>
+                <span class="px-2.5 py-1 rounded bg-indigo-400/10 text-indigo-300 border border-indigo-400/25">Modelos LLM</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300">Webhooks Asíncronos</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300">PostgreSQL</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300">Telegram Bot API</span>
+              </div>
+
+              <!-- Context -->
+              <div class="space-y-1">
+                <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-sm text-sky-400">info</span>
+                  Contexto del Problema
+                </h4>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                  Colapso administrativo generado por el ingreso no estructurado de peticiones, quejas y reportes de infraestructura comunitaria, provocando hasta 5 días hábiles de retraso en la clasificación inicial por dependencias.
+                </p>
+              </div>
+
+              <!-- Mi Rol & Implementación -->
+              <div class="space-y-2">
+                <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-sm text-indigo-400">engineering</span>
+                  Mi Rol & Implementación Técnica
+                </h4>
+                <ul class="space-y-2 text-xs text-slate-300 leading-relaxed">
+                  <li class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-sky-400 text-base shrink-0 mt-0.5">check_circle</span>
+                    <span><strong>Diseñé flujos autónomos en n8n</strong> conectados a webhooks para captura multicanal instantánea de incidencias ciudadanas (mensajería y formularios web).</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-sky-400 text-base shrink-0 mt-0.5">check_circle</span>
+                    <span><strong>Implementé un nodo clasificador con IA</strong> que analiza el cuerpo del mensaje, categoriza la severidad (urgente/normal) y asigna el departamento municipal responsable.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-sky-400 text-base shrink-0 mt-0.5">check_circle</span>
+                    <span><strong>Orquesté disparadores automáticos</strong> de confirmación con radicado único al ciudadano y sincronización en base de datos para seguimiento de estados.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Resultados & Impacto -->
+              <div class="p-4 rounded-xl bg-sky-950/30 border border-sky-400/25 space-y-1">
+                <h4 class="text-xs font-mono uppercase tracking-wider text-sky-400 font-bold flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-sm">trending_up</span>
+                  Resultados Alcanzados
+                </h4>
+                <p class="text-xs text-slate-200 leading-relaxed">
+                  <strong>Automatización del 90% del triaje inicial</strong> y reducción del tiempo de confirmación y enrutamiento de incidencias de 72 horas a menos de 30 segundos.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Card Footer Links -->
+          <div class="px-7 py-4 bg-slate-900/60 border-t border-slate-800/80 flex items-center justify-between">
+            <a href="https://github.com/DiegoAndresParra14" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-mono font-semibold text-slate-300 hover:text-sky-300 transition-colors">
+              <span class="material-symbols-outlined text-base">code</span>
+              <span>Repositorio en GitHub</span>
+            </a>
+            <a href="#contacto" class="inline-flex items-center gap-1.5 text-xs font-mono text-sky-400 hover:underline">
+              <span>Consultar Flujo n8n</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         GROWTH JOURNEY / TRAYECTORIA TÉCNICA
+         ==================================================================== -->
+    <section id="trayectoria" class="pt-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold">Evolución de Carrera</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mt-1">Metodología y Trayectoria Técnica</h2>
+        <p class="text-slate-400 text-sm md:text-base mt-2">
+          De los fundamentos de lógica y bases de datos a la construcción de arquitecturas backend de misión crítica y automatizaciones avanzadas.
+        </p>
+      </div>
+
+      <div class="relative max-w-4xl mx-auto">
+        <!-- Vertical Line -->
+        <div class="absolute left-4 md:left-1/2 top-4 bottom-4 w-px bg-gradient-to-b from-sky-400 via-indigo-500 to-slate-800 transform md:-translate-x-1/2"></div>
+
+        <div class="space-y-12">
+          
+          <!-- Hito 1: 2026 (Actual) -->
+          <div class="relative flex flex-col md:flex-row items-start">
+            <div class="md:w-1/2 md:pr-12 md:text-right pl-12 md:pl-0">
+              <span class="inline-block px-3 py-1 rounded-full text-[11px] font-mono font-bold bg-sky-400/10 text-sky-400 border border-sky-400/30 mb-2">
+                2026 — Foco Actual
+              </span>
+              <h3 class="text-xl font-bold text-white">Arquitectura Backend, Concurrencia y Automatizaciones de Misión Crítica</h3>
+              <p class="text-slate-300 text-sm mt-2 leading-relaxed">
+                Desarrollo del sistema RapidExpress aplicando Java MVC, modelado relacional riguroso en MySQL Cloud y auditoría inmutable. Orquestación avanzada de flujos n8n acoplados a modelos de lenguaje (LLMs) para automatizar operaciones de alta demanda.
+              </p>
+            </div>
+            
+            <!-- Timeline Dot -->
+            <div class="absolute left-4 md:left-1/2 top-1 -translate-x-1/2 w-4 h-4 rounded-full bg-sky-400 timeline-dot border-4 border-[#090D16]"></div>
+            
+            <div class="md:w-1/2 md:pl-12 hidden md:block">
+              <div class="surface-elevated p-4 rounded-xl text-xs font-mono text-slate-300 border border-slate-700/60">
+                <span class="text-sky-400">✓</span> Java SE • MVC • Cloud DB • Concurrency Control
+              </div>
+            </div>
+          </div>
+
+          <!-- Hito 2: 2025 -->
+          <div class="relative flex flex-col md:flex-row items-start">
+            <div class="md:w-1/2 md:pr-12 md:text-right hidden md:block">
+              <div class="surface-elevated p-4 rounded-xl text-xs font-mono text-slate-300 border border-slate-700/60">
+                <span class="text-indigo-400">✓</span> Python Scripts • n8n Pipelines • Git Flow
+              </div>
+            </div>
+
+            <!-- Timeline Dot -->
+            <div class="absolute left-4 md:left-1/2 top-1 -translate-x-1/2 w-4 h-4 rounded-full bg-indigo-400 timeline-dot border-4 border-[#090D16]"></div>
+
+            <div class="md:w-1/2 md:pl-12 pl-12 md:pl-0">
+              <span class="inline-block px-3 py-1 rounded-full text-[11px] font-mono font-semibold bg-indigo-400/10 text-indigo-300 border border-indigo-400/30 mb-2">
+                2025
+              </span>
+              <h3 class="text-xl font-bold text-white">Integración Full Stack, APIs y Automatización Operativa</h3>
+              <p class="text-slate-300 text-sm mt-2 leading-relaxed">
+                Consolidación del ciclo completo de desarrollo web full stack. Implementación de estándares de versionamiento profesional (Git Flow), desarrollo de interfaces reactivas y construcción de las primeras automatizaciones inteligentes con n8n y Python.
+              </p>
+            </div>
+          </div>
+
+          <!-- Hito 3: 2025 -->
+          <div class="relative flex flex-col md:flex-row items-start">
+            <div class="md:w-1/2 md:pr-12 md:text-right pl-12 md:pl-0">
+              <span class="inline-block px-3 py-1 rounded-full text-[11px] font-mono font-semibold bg-slate-800 text-slate-300 border border-slate-700 mb-2">
+                2025
+              </span>
+              <h3 class="text-xl font-bold text-white">Formación en Programación Avanzada & Proyectos Campuslands</h3>
+              <p class="text-slate-300 text-sm mt-2 leading-relaxed">
+                Formación intensiva en desarrollo de software en Campuslands. Desarrollo de aplicaciones estructuradas en Python, interfaces web semánticas y responsive con HTML/CSS/JavaScript, control de versiones con Git/GitHub y trabajo colaborativo bajo metodología ágil Scrum.
+              </p>
+            </div>
+
+            <!-- Timeline Dot -->
+            <div class="absolute left-4 md:left-1/2 top-1 -translate-x-1/2 w-4 h-4 rounded-full bg-slate-500 border-4 border-[#090D16]"></div>
+
+            <div class="md:w-1/2 md:pl-12 hidden md:block">
+              <div class="surface-elevated p-4 rounded-xl text-xs font-mono text-slate-300 border border-slate-700/60">
+                <span class="text-slate-400">✓</span> Campuslands • Python Core • Web Semántica • Scrum
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         FOOTER & CONTACTO DIRECTO
+         ==================================================================== -->
+    <section id="contacto" class="pt-8">
+      <div class="bento-card p-8 md:p-12 relative overflow-hidden">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Contact Left Info -->
+          <div class="lg:col-span-5 space-y-8">
+            <div>
+              <span class="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold">Contacto Directo</span>
+              <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mt-1">¿Hablamos de tu Proyecto?</h2>
+              <p class="text-slate-300 text-sm leading-relaxed mt-3">
+                Si buscas un desarrollador backend y full stack con criterio arquitectónico, capacidad de análisis de procesos y compromiso con el código limpio, conversemos sobre cómo aportar valor de inmediato a tu equipo.
+              </p>
+            </div>
+
+            <!-- Contact Channels Grid -->
+            <div class="space-y-4">
+              
+              <!-- Correo -->
+              <a href="mailto:dieguitop678@gmail.com" class="surface-elevated p-4 rounded-xl flex items-center gap-4 hover:border-sky-400/40 hover:bg-slate-800/80 transition-all group">
+                <div class="w-10 h-10 rounded-lg bg-sky-400/10 text-sky-400 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                  <span class="material-symbols-outlined text-xl">mail</span>
+                </div>
+                <div class="min-w-0">
+                  <div class="text-[11px] font-mono text-slate-400 uppercase">Correo Profesional</div>
+                  <div class="text-sm font-semibold text-white truncate group-hover:text-sky-300">dieguitop678@gmail.com</div>
+                </div>
+              </a>
+
+              <!-- WhatsApp Comercial -->
+              <a href="https://wa.me/573134298253?text=Hola%20Diego,%20vi%20tu%20portafolio%20profesional%20y%20me%20gustar%C3%ADa%20conversar%20sobre%20una%20oportunidad%20de%20desarrollo." target="_blank" rel="noopener noreferrer" class="surface-elevated p-4 rounded-xl flex items-center gap-4 hover:border-emerald-400/40 hover:bg-slate-800/80 transition-all group">
+                <div class="w-10 h-10 rounded-lg bg-emerald-400/10 text-emerald-400 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                  </svg>
+                </div>
+                <div class="min-w-0">
+                  <div class="text-[11px] font-mono text-slate-400 uppercase">WhatsApp Comercial</div>
+                  <div class="text-sm font-semibold text-white group-hover:text-emerald-300">(+57) 313 429 8253</div>
+                </div>
+              </a>
+
+              <!-- Perfiles Profesionales (GitHub & LinkedIn) -->
+              <div class="grid grid-cols-2 gap-3 pt-2">
+                <a href="https://github.com/DiegoAndresParra14" target="_blank" rel="noopener noreferrer" class="surface-elevated p-3.5 rounded-xl flex items-center gap-3 hover:border-slate-600 transition-colors group">
+                  <svg class="w-5 h-5 text-slate-300 group-hover:text-white fill-current" viewBox="0 0 24 24">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span class="text-xs font-mono font-medium text-slate-300 group-hover:text-white">GitHub</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/diego-parra-6761a43a1/" target="_blank" rel="noopener noreferrer" class="surface-elevated p-3.5 rounded-xl flex items-center gap-3 hover:border-slate-600 transition-colors group">
+                  <svg class="w-5 h-5 text-sky-400 group-hover:text-sky-300 fill-current" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                  <span class="text-xs font-mono font-medium text-slate-300 group-hover:text-white">LinkedIn</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Contact Right Form -->
+          <div class="lg:col-span-7">
+            <form data-contact-form class="surface-elevated p-6 sm:p-8 rounded-2xl border border-slate-800/80 space-y-5">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="name-input" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-2">
+                    Tu Nombre Completo *
+                  </label>
+                  <input 
+                    id="name-input"
+                    name="name" 
+                    type="text" 
+                    required 
+                    placeholder="Ej. Ing. Carlos Mendoza" 
+                    class="w-full bg-slate-900/90 border border-slate-700/80 focus:border-sky-400 focus:ring-1 focus:ring-sky-400 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 transition-colors"
+                  />
+                </div>
+
+                <div>
+                  <label for="email-input" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-2">
+                    Correo Electrónico *
+                  </label>
+                  <input 
+                    id="email-input"
+                    name="email" 
+                    type="email" 
+                    required 
+                    placeholder="ejemplo@empresa.com" 
+                    class="w-full bg-slate-900/90 border border-slate-700/80 focus:border-sky-400 focus:ring-1 focus:ring-sky-400 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 transition-colors"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="subject-input" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-2">
+                  Tipo de Solución / Asunto
+                </label>
+                <select 
+                  id="subject-input"
+                  name="subject" 
+                  class="w-full bg-slate-900/90 border border-slate-700/80 focus:border-sky-400 focus:ring-1 focus:ring-sky-400 rounded-xl px-4 py-3 text-sm text-white transition-colors"
+                >
+                  <option value="backend">Desarrollo Backend / Base de Datos Relacional</option>
+                  <option value="automation">Automatización de Procesos con n8n & IA</option>
+                  <option value="fullstack">Plataforma Full Stack / Dashboard Operativo</option>
+                  <option value="strategic_role">Oportunidad Laboral / Rol Estratégico</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="message-input" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-2">
+                  Detalles del Proyecto o Requerimiento *
+                </label>
+                <textarea 
+                  id="message-input"
+                  name="message" 
+                  rows="4" 
+                  required 
+                  placeholder="Cuéntame sobre el problema operativo, infraestructura o tecnología que buscas implementar..." 
+                  class="w-full bg-slate-900/90 border border-slate-700/80 focus:border-sky-400 focus:ring-1 focus:ring-sky-400 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 transition-colors resize-none"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-4 rounded-xl font-bold text-sm tracking-wider uppercase btn-primary-glow flex items-center justify-center gap-2">
+                <span>Enviar Mensaje Profesional</span>
+                <span class="material-symbols-outlined text-base font-bold">send</span>
+              </button>
+
+              <div data-form-status class="hidden transition-all pt-2" aria-live="polite"></div>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ====================================================================
+       MODAL DE CURRICULUM VITAE (Visualización Profesional & Print-Ready PDF)
+       ==================================================================== -->
+  <div id="cv-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 modal-overlay" role="dialog" aria-modal="true" aria-labelledby="cv-modal-title">
+    <div class="modal-content relative w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-[#0F172A] border border-slate-700 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
+      
+      <!-- Modal Header (no-print) -->
+      <div class="flex items-center justify-between border-b border-slate-800 pb-4 no-print">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-sky-400">badge</span>
+          <h3 id="cv-modal-title" class="text-lg font-bold text-white">Curriculum Vitae Ejecutivo</h3>
+        </div>
+        <div class="flex items-center gap-2">
+          <a href="./cv_diego_parra.pdf" download="CV_Diego_Parra_Backend.pdf" class="px-3.5 py-1.5 rounded-lg text-xs font-mono font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 hover:bg-emerald-500/30 flex items-center gap-1.5 transition-colors">
+            <span class="material-symbols-outlined text-sm">download</span>
+            <span>Descargar PDF</span>
+          </a>
+          <button type="button" data-print-cv class="px-3.5 py-1.5 rounded-lg text-xs font-mono font-semibold btn-primary-glow flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-sm">print</span>
+            <span>Imprimir</span>
+          </button>
+          <button type="button" data-close-cv aria-label="Cerrar modal" class="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
+            <span class="material-symbols-outlined text-xl">close</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- CV Printable Content -->
+      <div class="space-y-6 text-slate-200">
+        <!-- Header Profile -->
+        <div class="border-b border-slate-800 pb-6 flex flex-col sm:flex-row justify-between sm:items-end gap-4">
+          <div>
+            <h2 class="text-3xl font-extrabold text-white">DIEGO PARRA</h2>
+            <p class="text-base text-sky-400 font-semibold mt-1">DESARROLLADOR BACKEND & FULL STACK</p>
+            <p class="text-xs text-slate-400 mt-2 font-mono flex flex-wrap gap-x-4 gap-y-1">
+              <span><strong>Email:</strong> dieguitop678@gmail.com</span>
+              <span><strong>Teléfono:</strong> (+57) 3134298253</span>
+              <span><strong>Ubicación:</strong> Floridablanca / Santander, Colombia</span>
+            </p>
+            <p class="text-xs text-slate-400 mt-1 font-mono flex flex-wrap gap-x-4 gap-y-1">
+              <a href="https://www.linkedin.com/in/diego-parra-6761a43a1/" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:underline">linkedin.com/in/diego-parra-6761a43a1/</a>
+              <a href="https://github.com/DiegoAndresParra14" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:underline">github.com/DiegoAndresParra14</a>
+            </p>
+          </div>
+          <div class="text-xs font-mono text-slate-400">
+            Actualización: 2026
+          </div>
+        </div>
+
+        <!-- Acerca de Mí -->
+        <div>
+          <h4 class="text-xs font-mono uppercase tracking-wider text-sky-400 font-bold mb-2">Acerca de Mí</h4>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Desarrollador backend en formación continua, con sólidas bases en programación, lógica computacional y desarrollo de software. Cuenta con experiencia en la realización de proyectos utilizando Python, Java y tecnologías web, aplicando control de versiones con Git/GitHub, patrones de arquitectura limpia (MVC), modelado relacional en la nube (MySQL) y buenas prácticas de organización de código. Posee habilidades destacadas para la resolución de problemas, estructuración de aplicaciones y trabajo bajo metodologías ágiles como Scrum.
+          </p>
+        </div>
+
+        <!-- Experiencia Profesional & Proyectos -->
+        <div>
+          <h4 class="text-xs font-mono uppercase tracking-wider text-sky-400 font-bold mb-3">Experiencia Profesional & Proyectos</h4>
+          <div class="space-y-3.5 text-xs">
+            
+            <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
+              <div class="flex flex-col sm:flex-row justify-between sm:items-center font-bold text-white text-sm">
+                <span>RapidExpress – Sistema de Gestión Logística, Flotas y Rutas</span>
+                <span class="text-sky-400 font-mono text-xs">Java • MySQL Cloud • 2026</span>
+              </div>
+              <p class="text-slate-300 mt-1.5 leading-relaxed">Diseñé el modelo relacional (ERD/DDL/DML) persistido en base de datos MySQL en la nube. Implementé arquitectura MVC en Java con validación de capacidad de carga y concurrencia, módulo de auditoría en archivos planos y Git Flow riguroso (+10 commits semánticos).</p>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
+              <div class="flex flex-col sm:flex-row justify-between sm:items-center font-bold text-white text-sm">
+                <span>Desarrollo Web – Proyecto HTML</span>
+                <span class="text-sky-400 font-mono text-xs">Campuslands • Marzo 2025</span>
+              </div>
+              <p class="text-slate-300 mt-1.5 leading-relaxed">Desarrollo de interfaz web estática utilizando HTML, aplicando principios de estructura semántica y organización del contenido de la página. Enfoque riguroso en la correcta estructuración del documento, layout de la página y aplicación de buenas prácticas responsive.</p>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
+              <div class="flex flex-col sm:flex-row justify-between sm:items-center font-bold text-white text-sm">
+                <span>Proyecto con Metodología Scrum</span>
+                <span class="text-indigo-400 font-mono text-xs">Campuslands • Febrero 2025</span>
+              </div>
+              <p class="text-slate-300 mt-1.5 leading-relaxed">Desarrollo de estrategias colaborativas y campañas virales incrementando seguidores en un 50%. Gestión de redes sociales, creación de contenido visual y escrito alineado con identidad de marca, y monitoreo y adaptación ágil de tendencias bajo marco de trabajo Scrum.</p>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
+              <div class="flex flex-col sm:flex-row justify-between sm:items-center font-bold text-white text-sm">
+                <span>Desarrollo de Software – Proyecto Python</span>
+                <span class="text-cyan-400 font-mono text-xs">Campuslands • Enero 2025</span>
+              </div>
+              <p class="text-slate-300 mt-1.5 leading-relaxed">Desarrollo de aplicación en Python enfocada en la implementación de lógica de programación y resolución de problemas. Estructuración del flujo del programa, organización de código, manejo de estructuras de datos, modularización y programación estructurada.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Educación -->
+        <div>
+          <h4 class="text-xs font-mono uppercase tracking-wider text-sky-400 font-bold mb-3">Educación</h4>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+            <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
+              <div class="font-bold text-white">Campuslands</div>
+              <div class="text-sky-400 mt-0.5 font-medium">Formación en Programación Avanzada / Desarrollo de Software</div>
+              <div class="text-slate-400 font-mono mt-1 text-[11px]">Octubre - 2025</div>
+            </div>
+            <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
+              <div class="font-bold text-white">Instituto Técnico la Cumbre</div>
+              <div class="text-slate-300 mt-0.5">Bachiller Técnico</div>
+              <div class="text-slate-400 font-mono mt-1 text-[11px]">2017 - 2018</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Habilidades Duras y Blandas -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
+            <h4 class="text-xs font-mono uppercase tracking-wider text-sky-400 font-bold mb-2">Habilidades Duras</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Programación en Python, Java, HTML, JavaScript, Lógica de programación, Control de versiones con Git, Uso de GitHub, Estructuración de aplicaciones, Principios y arquitectura backend (MVC, MySQL Cloud), Automatizaciones con n8n e IA.
+            </p>
+          </div>
+          <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
+            <h4 class="text-xs font-mono uppercase tracking-wider text-indigo-400 font-bold mb-2">Habilidades Blandas</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Pensamiento analítico, Resolución de problemas, Disciplina, Trabajo en equipo, Adaptabilidad, Gestión ágil Scrum.
+            </p>
+          </div>
+        </div>
+
+        <!-- Idiomas -->
+        <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800 flex justify-between items-center text-xs">
+          <div><strong class="text-white">Idiomas:</strong> <span class="text-slate-300">Español (Nativo)</span> • <span class="text-slate-300">Inglés (A2)</span></div>
+          <div class="font-mono text-sky-400 text-[11px]">Floridablanca, Santander</div>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer (no-print) -->
+      <div class="pt-4 border-t border-slate-800 flex justify-between items-center no-print">
+        <a href="./cv_diego_parra.pdf" download="CV_Diego_Parra_Backend.pdf" class="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 hover:underline">
+          <span class="material-symbols-outlined text-sm">download</span>
+          <span>Descargar archivo PDF original</span>
+        </a>
+        <button type="button" data-close-cv class="px-5 py-2 rounded-xl text-xs font-semibold btn-secondary-outline">
+          Cerrar Vista Previa
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+  <footer class="w-full border-t border-slate-800/80 bg-[#090D16]/95 relative z-10 py-12">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center font-mono font-bold text-slate-950 text-xs">
+          DP
+        </div>
+        <div class="text-xs text-slate-400 font-mono">
+          © 2026 <strong class="text-slate-200">Diego Andrés Parra</strong> • Sistemas Backend & Automatización
+        </div>
+      </div>
+
+      <!-- Quick Footer Links -->
+      <div class="flex items-center gap-6 text-xs font-mono text-slate-400">
+        <a href="#hero" class="hover:text-sky-300 transition-colors">Inicio</a>
+        <a href="#servicios" class="hover:text-sky-300 transition-colors">Servicios</a>
+        <a href="#proyectos" class="hover:text-sky-300 transition-colors">Proyectos</a>
+        <a href="https://github.com/DiegoAndresParra14" target="_blank" rel="noopener noreferrer" class="hover:text-sky-300 transition-colors">GitHub</a>
+        <a href="https://www.linkedin.com/in/diego-parra-6761a43a1/" target="_blank" rel="noopener noreferrer" class="hover:text-sky-300 transition-colors">LinkedIn</a>
+      </div>
+
+      <div class="flex items-center gap-2 text-[11px] font-mono text-slate-400 bg-slate-900/60 px-3 py-1.5 rounded-lg border border-slate-800">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>Sistemas en línea • Git Flow Activo</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="./script.js"></script>
+</body>
+</html>
